@@ -1,0 +1,20 @@
+{% raw %}
+takes:
+- `color` (hex) [DEFAULT: darkblue]
+- `image` (url) background var [NO DEFAULT]
+- `heading` (text) [DEFAULT: site tagline]
+- `subheading` (text) [DEFAULT: site description]
+- `button_label` (text) [NO DEFAULT]
+- `button_url` (text) [NO DEFAULT]
+
+e.g.:
+{% include heading-banner-block
+  color="#003366"
+  image="community.jpg"
+  heading="Get Inspired with Our Community"
+  subheading="Over 10 community groups with isi nunc, in bibendum enim tempus sed."
+  button_label="Learn More"
+  button_url="/community"
+%}
+
+{% endraw %}
