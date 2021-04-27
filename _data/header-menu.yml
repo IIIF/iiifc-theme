@@ -1,0 +1,14 @@
+- label: 'Home'
+  link: '/'
+- label: 'Demos'
+  link: '/demos'
+- label: 'News & Events'
+  link: '/news-and-events'
+- label: 'Get Involved'
+  sub:
+    - label: 'Test Sub1'
+      link: ''
+- label: 'Get Started'
+  sub:
+    - label: 'Test Sub2'
+      link: ''

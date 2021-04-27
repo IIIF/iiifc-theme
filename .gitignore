@@ -1,3 +1,4 @@
+# ruby stuff
 /.bundle/
 /.yardoc
 /_yardoc/
@@ -7,3 +8,11 @@
 /spec/reports/
 /tmp/
 Gemfile.lock
+
+# jekyll stuff
+.jekyll-cache
+.jekyll-metadata
+_site
+
+# misc
+.DS_Store
