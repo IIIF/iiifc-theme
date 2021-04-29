@@ -1,0 +1,25 @@
+{% comment %}
+takes:
+- `hero` (hash) [NO DEFAULT]
+- `pin_to_top` (bool) [DEFAULT: false]
+
+each `hero` takes:
+- `color` (hex) [DEFAULT: darkblue]
+- `image` (url) background var [NO DEFAULT]
+- `heading` (text) [DEFAULT: site tagline]
+- `subheading` (text) [DEFAULT: site description]
+- `button_label` (text) [NO DEFAULT]
+- `button_url` (text) [NO DEFAULT]
+
+
+e.g.:
+{% include blocks/hero.html hero=hero %}
+{% endcomment %}
+
+{% assign hero=include.hero %}
+
+<div>
+  <h2>{{ hero.heading }}</h2>
+  <p>{{ hero.subheading }}</p>
+  {% include misc/button.html button_label=hero.button_label button_link=hero.button_link %}
+</div>

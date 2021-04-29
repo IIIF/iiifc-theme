@@ -6,6 +6,11 @@
   <body>
 
     {%- include header.html -%}
+    {%- if page.hero -%}
+    <hr>
+      {% include blocks/hero.html hero=page.hero pin_to_top=true %}
+    <hr>
+    {%- endif -%}
 
     <main class="page-content" aria-label="Content">
       <div class="wrapper">

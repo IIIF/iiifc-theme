@@ -1,0 +1,13 @@
+<ul>
+  {% for item in include.items %}
+  <li>
+    <a href="{{ item.link | absolute_url }}">
+      {% if item.logo %}
+      <img alt="{{ item.name }} logo" src="{{ item.logo | absolute_url }}" />
+      {% else %}
+      {{ item.name }}
+      {% endif %}
+  </a>
+  </li>
+  {% endfor %}
+</ul>

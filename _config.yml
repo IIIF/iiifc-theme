@@ -1,8 +1,14 @@
-url:          ''
-baseurl:      '/iiifc-theme'
-permalink:    'pretty'
+url:            ''
+baseurl:        '/iiifc-theme'
+permalink:      'pretty'
 
-exclude: ['*.gemspec', 'CODE_*', 'README*']
+exclude:        ['*.gemspec', 'CODE_*', 'README*']
+incremental:    true
+force_polling:  true
+
+collections:
+  pages:
+    output: true
 
 organization:
   title:        'IIIF | International Image Interoperability Framework'

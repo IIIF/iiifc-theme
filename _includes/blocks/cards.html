@@ -1,0 +1,29 @@
+{% comment %}
+takes:
+- `items` (hash array) [NO DEFAULT]
+
+each `item` takes:
+- `image` (text) [NO DEFAULT]
+- `label` (text) [NO DEFAULT]
+- `description` (text) [NO DEFAULT]
+- `link` (text) [NO DEFAULT]
+- `link_text` (text) [NO DEFAULT]
+- `tag` (text) [NO DEFAULT]
+
+e.g.:
+{% include blocks/cards.html items=items %}
+
+{% endcomment %}
+<div>
+  <ul>
+  {% for item in include.items %}
+    <li>
+      <img src="{{ item.image | absolute_url }}"/>
+      <b>{{ item.label }}</b>
+      <p>{{ item.description }}</p>
+      <a href="{{ item.link | absolute_url }}">{{ item.link_text }}</a>
+      <p>{{ item.tag | capitalize }}</p>
+    </li>
+  {% endfor %}
+  </ul>
+</div>

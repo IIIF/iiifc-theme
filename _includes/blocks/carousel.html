@@ -1,0 +1,28 @@
+{% comment %}
+takes:
+- `items` (hash array) [NO DEFAULT]
+
+each `item` takes:
+- `image` (text) [NO DEFAULT]
+- `link` (text) [NO DEFAULT]
+- `label` (text) [NO DEFAULT]
+- `alt_text` (text) [DEFAULT `label`]
+
+e.g.:
+{% include blocks/carousel.html items=items %}
+
+{% endcomment %}
+<div>
+  <
+  <ul>
+  {% for item in include.items %}
+    <li>
+      <a href="{{ item.link | absolute_url }}">
+        <img alt="{{ item.alt_text | default: item.label }}" src="{{ item.image | absolute_url }}"/>
+        <p>{{ item.label }}</p>
+      </a>
+    </li>
+  {% endfor %}
+  </ul>
+  >
+</div>

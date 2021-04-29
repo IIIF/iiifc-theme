@@ -1,0 +1,25 @@
+{% comment %}
+takes:
+- `items` (hash array) [NO DEFAULT]
+
+each `item` takes:
+- `label` (text) [NO DEFAULT]
+- `description` (text) [NO DEFAULT]
+- `image` (text) [NO DEFAULT]
+
+e.g.:
+{% include blocks/features.html items=items %}
+
+{% endcomment %}
+
+<div>
+  <ul>
+  {% for item in include.items %}
+    <li>
+      <img src="{{ item.image | absolute_url }}"/>
+      <b>{{ item.label }}</b>
+      <p>{{ item.description }}</p>
+    </li>
+  {% endfor %}
+  </ul>
+</div>
