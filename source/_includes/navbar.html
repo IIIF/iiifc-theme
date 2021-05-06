@@ -1,62 +1,36 @@
-{% comment %}
-<nav>
-  <ul>
-    <li>
-      <a href="{{ '/' | absolute_url }}">
-        <img src="{{ site.organization.logo | absolute_url }}" />
-        <h1>{{ site.title | default: site.organization.title }}</h1>
+<nav id="navbar" class="navbar is-transparent is-spaced">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="{{ '/' | absolute_url }}">
+        <img src="{{ site.organization.logo | absolute_url }}" alt="{{ site.organization.title | default: site.title }} logo" height="28">
+        <span class="brand-title">{{ site.organization.title | default: site.title }}</span>
       </a>
-    </li>
-    {%- for item in site.data.header-menu -%}
-    <li>
-      {% if item.sub %}
-      {{ item.label }}
-      <ul>
-        {% for sub in item.sub %}
-        <li>
-          <a href="{{ sub.link | absolute_url }}">{{ sub.label }}</a>
-        </li>
-        {% endfor %}
-      </ul>
-      {% elsif item.link %}
-      <a href="{{ item.link | absolute_url }}">{{ item.label }}</a>
-      {% endif %}
-    </li>
-    {%- endfor -%}
-  </ul>
-</nav>
-{% endcomment %}
-<nav class="navbar is-transparent is-spaced">
-  <div class="navbar-brand">
-    <a class="navbar-item" href="{{ '/' | absolute_url }}">
-      <img src="{{ site.organization.logo | absolute_url }}" alt="{{ site.organization.title | default: site.title }} logo" height="28">
-      <span class="brand-title">{{ site.organization.title | default: site.title }}</span>
-    </a>
-    <div class="navbar-burger" data-target="navbar">
-      <span></span>
-      <span></span>
-      <span></span>
+      <div class="navbar-burger" data-target="navbar">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </div>
-  </div>
 
-  <div id="navbar" class="navbar-menu">
-    <div class="navbar-end">
-      {%- for item in site.data.header-menu -%}
-        {% if item.sub %}
-          <div class="navbar-item has-dropdown is-hoverable">
-            <a class="navbar-link">
-              {{ item.label }}
-            </a>
-            <div class="navbar-dropdown is-boxed is-active">
-              {% for sub in item.sub %}
-                <a class="navbar-item" href="{{ sub.link | absolute_url }}">{{ sub.label }}</a>
-              {% endfor %}
+    <div class="navbar-menu">
+      <div class="navbar-end">
+        {%- for item in site.navbar_menu -%}
+          {% if item.sub %}
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link" {%- if item.link -%}href="{{ item.link | absolute_url }}"{%- endif -%}>
+                {{ item.label }}
+              </a>
+              <div class="navbar-dropdown is-boxed is-active">
+                {% for sub in item.sub %}
+                  <a class="navbar-item" href="{{ sub.link | absolute_url }}">{{ sub.label }}</a>
+                {% endfor %}
+              </div>
             </div>
-          </div>
-        {% elsif item.link %}
-          <a class="navbar-item" href="{{ item.link | absolute_url }}">{{ item.label }}</a>
-        {% endif %}
-      {%- endfor -%}
+          {% else %}
+            <a class="navbar-item" href="{{ item.link | absolute_url }}">{{ item.label }}</a>
+          {% endif %}
+        {%- endfor -%}
+      </div>
     </div>
   </div>
 </nav>

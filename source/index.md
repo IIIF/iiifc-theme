@@ -4,10 +4,9 @@ title: Home
 hero:
   bg_color: "#003366"
   text_color: "#ffffff"
+  image: "assets/images/possible_header_images/Under_the_Wave_off_Kanagawa.jpg"
   heading: Gain richer access to the world's image, audio, and visual files
   subheading: "IIIF is an open software standard for delivering high quality, attributed digital objects online at scale. It’s also the international community of people developing and implementing the IIIF APIs. IIIF is stewarded by a consortium."
-  button_bg_color: "blue"
-  button_text_color: "#ffffff"
   button_label: "Get Started"
   button_link: "/get-started"
 community_banner:
@@ -31,9 +30,10 @@ stay_connected_cards:
     link: /get-involved
 ---
 
-## Break down silos
+## Break down silos with free APIs
 Much of the internet’s digitized image, audio, and visual resources are locked up in restricted silos. IIIF enables users to view zoom, pan, and add additional images for comparison--on one site, or across many times. It also allows annotations and multi-layer viewing, among many other options.
-{% include blocks/carousel.html items=site.data.demos %}
+
+{% include blocks/demos.html items=site.data.demos %}
 {% include misc/button.html button_label="View Demos" button_link="/demos/" %}
 
 ## Upcoming community calls

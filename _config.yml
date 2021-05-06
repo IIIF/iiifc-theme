@@ -4,16 +4,11 @@ permalink:      pretty
 source:         source
 title:          "IIIF | International Image Interoperability Framework"
 
-live_reload:    true
-force_polling:  true
-
 sass:
   style:        compressed
   sass_dir:     _sass
-
 exclude:
   - node_modules
-
 collections:
   pages:
     output: true
@@ -25,3 +20,21 @@ organization:
   email:        iiif-discuss@googlegroups.com
   url:          //iiif.io
   logo:         assets/images/logo-sm.png
+
+navbar_menu:
+  - label: 'Home'
+    link: '/'
+  - label: 'Demos'
+    link: '/demos'
+  - label: 'News & Events'
+    link: '/news-and-events'
+  - label: 'Get Involved'
+    link: '/get-involved'
+    sub:
+      - label: 'Test Sub1'
+        link: ''
+  - label: 'Get Started'
+    link: '/get-started'
+    sub:
+      - label: 'Test Sub2'
+        link: ''

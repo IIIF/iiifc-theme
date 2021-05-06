@@ -13,23 +13,62 @@ $black: #171717;
 $greyish-brown: #4a4a4a;
 $shadow: rgba(60, 64, 67, 0.2);
 
+$background: $light-blue;
+$primary: $blue;
+$navbar-burger-color: $white;
+$navbar-dropdown-arrow: $white;
+$navbar-tab-hover-border-bottom-color: $white;
+$navbar-dropdown-background-color: $navy;
+
 /* font overrides */
 $family-sans-serif: "PT Sans", sans-serif;
 $family-serif: "Playfair Display", serif;
 
+/* layout overrides */
+$container-max-width: 1040px;
+
 @import "fonts";
 @import "../node_modules/bulma/bulma.sass";
 
+
 .brand-title {
-  width: 189px;
+  width: 195px;
   height: 30px;
-  margin: 0 0 0 3.8px;
+  margin: 0 0 0 1rem;
   font-family: "Playfair Display";
   font-size: 13px;
   font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1.15;
-  letter-spacing: normal;
-  /* color: white; */
+  letter-spacing: 1px;
+  color: $white;
+}
+
+#navbar {
+  font-family: $family-serif;
+  font-weight: bold;
+}
+
+.hero .title {
+  font-family: $family-serif;
+  font-size: 3.5rem;
+}
+
+#main {
+  font-family: $family-sans-serif;
+  color: $black;
+
+  p {
+    text-align: center;
+    margin: .5em auto 2em;
+    max-width: 850px;
+    line-height: 1.25;
+    font-size: 1.2em;
+  }
+
+  h2 {
+    font-family: $family-serif;
+    color: $dark-blue;
+    font-size: 2rem;
+    font-weight: bold;
+  }
 }

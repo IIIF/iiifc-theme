@@ -1,7 +1,15 @@
 ---
 layout: default
 ---
-<section class="hero is-medium is-info">
+{%- if page.hero_image -%}
+{% capture style %}
+  background-image: linear-gradient(to bottom, rgba(0, 25, 39, 0.56) 65%, rgba(0, 25, 39, 0) 103%), url('{{ page.hero_image | absolute_url }}');
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+{% endcapture %}
+{%- endif -%}
+<section class="hero is-medium is-info" style="{{ style }}">
   <div class="hero-head">
     {% include navbar.html %}
   </div>
@@ -14,7 +22,7 @@ layout: default
 </section>
 
 <section id="main" class="section block">
-  <div class="container">
+  <div class="container content">
     {{ content }}
   </div>
 </section>
