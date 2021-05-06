@@ -36,8 +36,6 @@ Much of the internet’s digitized image, audio, and visual resources are locked
 {% include blocks/carousel.html items=site.data.demos %}
 {% include misc/button.html button_label="View Demos" button_link="/demos/" %}
 
-<hr>
-
 ## Upcoming community calls
 Join a call (newcomers welcome!)
 {% for call in site.data.calls %}
@@ -46,27 +44,21 @@ Join a call (newcomers welcome!)
 
 {% include misc/button.html button_label="View full calendar" button_link="/news-and-events/" %}
 
-<hr>
-
 ## Simplify and enhance your work
 {% include blocks/features.html items=site.data.features %}
 {% include misc/button.html button_label="Why IIIF" button_link="/get-started/" %}
 
-<hr>
 
 ## Start building with open APIs
 The six IIIF APIs fit together to deliver endless possibilities.
 {% include blocks/cards.html items=site.data.apis %}
 
-<hr>
 {% include blocks/hero.html hero=page.community_banner %}
-<hr>
 
 ## Trusted by global technology leaders
 IIIF is used by aggregators, universities and research institutions, national libraries, archives, museums, software companies, and digital agencies around the world.
 {% include blocks/logo-grid.html items=site.data.institutions %}
 
-<hr>
 
 
 ## Get involved and stay connected

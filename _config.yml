@@ -2,6 +2,7 @@ url:            ''
 baseurl:        /iiifc-theme
 permalink:      pretty
 source:         source
+title:          "IIIF | International Image Interoperability Framework"
 
 live_reload:    true
 force_polling:  true
@@ -18,7 +19,8 @@ collections:
     output: true
 
 organization:
-  title:        IIIF | International Image Interoperability Framework
+  acronym:      IIIF
+  title:        International Image Interoperability Framework
   tagline:      "International Image Interoperability Framework: A community driven image framework with well defined APIs for making the world’s image repositories interoperable and accessible"
   email:        iiif-discuss@googlegroups.com
   url:          //iiif.io

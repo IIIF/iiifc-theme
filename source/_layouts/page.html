@@ -1,4 +1,22 @@
 ---
 layout: default
 ---
-{{ content }}
+<section class="hero is-medium is-info">
+  <div class="hero-head">
+    {% include navbar.html %}
+  </div>
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <p class="title">{{ page.title }}</p>
+      <p class="subtitle">{{ page.subtitle }}</p>
+    </div>
+  </div>
+</section>
+
+<section id="main" class="section block">
+  <div class="container">
+    {{ content }}
+  </div>
+</section>
+
+{%- include footer.html -%}

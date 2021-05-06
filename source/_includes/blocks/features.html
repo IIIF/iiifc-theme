@@ -12,14 +12,12 @@ e.g.:
 
 {% endcomment %}
 
-<div>
-  <ul>
+<div class="block">
   {% for item in include.items %}
-    <li>
+    <div class="box">
       <img src="{{ item.image | absolute_url }}"/>
       <b>{{ item.label }}</b>
       <p>{{ item.description }}</p>
-    </li>
+    </div>
   {% endfor %}
-  </ul>
 </div>

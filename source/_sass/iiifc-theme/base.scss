@@ -1,5 +1,35 @@
 @charset "utf-8";
 
-@import "../node_modules/bulma/bulma.sass";
-@import "colors";
+/* color overrides */
+$blue: #0073b0;
+$white: #ffffff;
+$dark-blue: #003654;
+$light-blue: rgba(141, 195, 223, 0.08);
+$navy: #001927;
+$navy-scrim: rgba(0, 25, 39, 0.8);
+$red: #a40832;
+$grey: rgba(237, 240, 240, 0.2);
+$black: #171717;
+$greyish-brown: #4a4a4a;
+$shadow: rgba(60, 64, 67, 0.2);
+
+/* font overrides */
+$family-sans-serif: "PT Sans", sans-serif;
+$family-serif: "Playfair Display", serif;
+
 @import "fonts";
+@import "../node_modules/bulma/bulma.sass";
+
+.brand-title {
+  width: 189px;
+  height: 30px;
+  margin: 0 0 0 3.8px;
+  font-family: "Playfair Display";
+  font-size: 13px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.15;
+  letter-spacing: normal;
+  /* color: white; */
+}

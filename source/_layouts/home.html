@@ -1,4 +1,20 @@
 ---
 layout: default
 ---
-{{ content }}
+<section class="hero is-info is-fullheight">
+  <div class="hero-head">
+    {% include navbar.html %}
+  </div>
+
+  {%- if page.hero -%}
+  {% include blocks/hero.html hero=page.hero pin_to_top=true %}
+  {%- endif -%}
+</section>
+
+<section id="main" class="section block">
+  <div class="container">
+    {{ content }}
+  </div>
+</section>
+
+{%- include footer.html -%}
