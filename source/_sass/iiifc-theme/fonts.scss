@@ -1,0 +1,170 @@
+@charset "utf-8";
+//
+// @font-face {
+//   font-family: PTSans;
+//   src: local(PTSans-Regular),
+//     url(/path/to/PTSans-Regular.woff2) format("woff2"),
+//     url(/path/to/PTSans-Regular.woff) format("woff"),
+//     url(/path/to/PTSans-Regular.ttf) format("truetype");
+//   font-weight: normal;
+//   font-style: normal;
+//   font-stretch: normal;
+// }
+//
+// @font-face {
+//   font-family: PTSans-Caption;
+//   src: local(PTSans-Caption),
+//     url(/path/to/PTSans-Caption.woff2) format("woff2"),
+//     url(/path/to/PTSans-Caption.woff) format("woff"),
+//     url(/path/to/PTSans-Caption.ttf) format("truetype");
+//   font-weight: normal;
+//   font-style: normal;
+//   font-stretch: normal;
+// }
+//
+// @font-face {
+//   font-family: PlayfairDisplay-Regular_;
+//   src: local(PlayfairDisplay-Regular_Bold),
+//     url(/path/to/PlayfairDisplay-Regular_Bold.woff2) format("woff2"),
+//     url(/path/to/PlayfairDisplay-Regular_Bold.woff) format("woff"),
+//     url(/path/to/PlayfairDisplay-Regular_Bold.ttf) format("truetype");
+//   font-weight: bold;
+//   font-style: normal;
+//   font-stretch: normal;
+// }
+//
+// @font-face {
+//   font-family: PlayfairDisplay-Regular_;
+//   src: local(PlayfairDisplay-Regular_Black),
+//     url(/path/to/PlayfairDisplay-Regular_Black.woff2) format("woff2"),
+//     url(/path/to/PlayfairDisplay-Regular_Black.woff) format("woff"),
+//     url(/path/to/PlayfairDisplay-Regular_Black.ttf) format("truetype");
+//   font-weight: 900;
+//   font-style: normal;
+//   font-stretch: normal;
+// }
+//
+// @mixin Desktop---H1 {
+//   font-family: PlayfairDisplay-Regular_;
+//   font-size: 38px;
+//   font-weight: 900;
+//   line-height: 1.26;
+//   text-align: center;
+// }
+//
+// @mixin Desktop---H2 {
+//   font-family: PlayfairDisplay-Regular_;
+//   font-size: 28px;
+//   font-weight: bold;
+//   text-align: center;
+//   color: $dark-blue;
+// }
+//
+// @mixin Mobile---H1-Nav-Links {
+//   font-family: PlayfairDisplay-Regular_;
+//   font-size: 24px;
+//   font-weight: 900;
+//   text-align: center;
+//   color: $white;
+// }
+//
+// @mixin Mobile---H2 {
+//   font-family: PlayfairDisplay-Regular_;
+//   font-size: 22px;
+//   font-weight: bold;
+//   text-align: center;
+//   color: $dark-blue;
+// }
+//
+// @mixin Mobile---H3-Desktop---Tabs {
+//   font-family: PlayfairDisplay-Regular_;
+//   font-size: 20px;
+//   font-weight: bold;
+//   text-align: center;
+//   color: $dark-blue;
+// }
+//
+// @mixin Desktop---H3 {
+//   font-family: PlayfairDisplay-Regular_;
+//   font-size: 18px;
+//   font-weight: bold;
+//   color: $navy;
+// }
+//
+// @mixin Mobile---H3 {
+//   font-family: PlayfairDisplay-Regular_;
+//   font-size: 18px;
+//   font-weight: bold;
+//   text-align: center;
+//   color: $blue;
+// }
+//
+// @mixin Mobile---H3-Tabs {
+//   font-family: PlayfairDisplay-Regular_;
+//   font-size: 16px;
+//   font-weight: bold;
+//   color: $dark-blue;
+// }
+//
+// @mixin Bulleted-list {
+//   font-family: PTSans;
+//   font-size: 16px;
+//   line-height: 1.5;
+//   color: #454545;
+// }
+//
+// @mixin Mobile---Body {
+//   font-family: PTSans;
+//   font-size: 16px;
+//   line-height: 1.25;
+//   text-align: center;
+//   color: $black;
+// }
+//
+// @mixin Desktop-Mobile---Left-Nav-Top-Nav {
+//   font-family: PlayfairDisplay-Regular_;
+//   font-size: 14px;
+//   font-weight: bold;
+//   color: $blue;
+// }
+//
+// @mixin Desktop-Mobile---Tile-Link {
+//   font-family: PlayfairDisplay-Regular_;
+//   font-size: 14px;
+//   font-weight: bold;
+//   line-height: 1.43;
+//   color: $blue;
+// }
+//
+// @mixin Desktop---Top-Nav-Links-Desktop-Mobile---ButtonLinks {
+//   font-family: PlayfairDisplay-Regular_;
+//   font-size: 14px;
+//   font-weight: bold;
+//   line-height: 1.43;
+//   text-align: center;
+//   color: $white;
+// }
+//
+// @mixin Tiles---Eyebrow {
+//   font-family: PlayfairDisplay-Regular_;
+//   font-size: 12px;
+//   font-weight: bold;
+//   line-height: 1.67;
+//   text-align: right;
+//   color: $greyish-brown;
+// }
+//
+// @mixin CMobile---Caption {
+//   font-family: PTSans-Caption;
+//   font-size: 12px;
+//   line-height: 1.5;
+//   text-align: center;
+//   color: $blue;
+// }
+//
+// @mixin Desktop---Caption {
+//   font-family: PTSans-Caption;
+//   font-size: 12px;
+//   line-height: 2;
+//   color: #5f5f5f;
+// }
