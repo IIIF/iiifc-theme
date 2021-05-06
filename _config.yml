@@ -2,7 +2,13 @@ url:            ''
 baseurl:        /iiifc-theme
 permalink:      pretty
 source:         source
-incremental:    true
+
+live_reload:    true
+force_polling:  true
+
+sass:
+  style:        compressed
+  sass_dir:     _sass
 
 exclude:
   - node_modules
@@ -16,4 +22,4 @@ organization:
   tagline:      "International Image Interoperability Framework: A community driven image framework with well defined APIs for making the world’s image repositories interoperable and accessible"
   email:        iiif-discuss@googlegroups.com
   url:          //iiif.io
-  logo:         assets/logo-sm.png
+  logo:         assets/images/logo-sm.png
