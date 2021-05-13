@@ -61,14 +61,29 @@ $container-max-width: 1040px;
     text-align: center;
     margin: .5em auto 2em;
     max-width: 850px;
-    line-height: 1.25;
-    font-size: 1.2em;
+    line-height: 22px;
+    font-size: 16px;
   }
 
   h2 {
     font-family: $family-serif;
     color: $dark-blue;
-    font-size: 2rem;
+    font-size: 28px;
     font-weight: bold;
+  }
+
+  h3 {
+    font-family: $family-serif;
+    color: $dark-blue;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .container-block {
+    width: 100%;
+    margin: 0 auto;
+    padding: 3em 0 3em 0;
+  }
+  .container-block:nth-child(odd) {
+    background-color: $light-blue;
   }
 }

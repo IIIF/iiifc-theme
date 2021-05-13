@@ -48,7 +48,6 @@ Join a call (newcomers welcome!)
 {% include blocks/features.html items=site.data.features %}
 {% include misc/button.html button_label="Why IIIF" button_link="/get-started/" %}
 
-
 ## Start building with open APIs
 The six IIIF APIs fit together to deliver endless possibilities.
 {% include blocks/cards.html items=site.data.apis %}

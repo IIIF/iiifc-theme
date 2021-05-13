@@ -12,11 +12,11 @@ e.g.:
 
 {% endcomment %}
 
-<div class="block">
+<div class="block columns">
   {% for item in include.items %}
-    <div class="box">
+    <div class="column">
       <img src="{{ item.image | absolute_url }}"/>
-      <b>{{ item.label }}</b>
+      <h3>{{ item.label }}</h3>
       <p>{{ item.description }}</p>
     </div>
   {% endfor %}
