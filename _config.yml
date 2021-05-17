@@ -1,13 +1,12 @@
 url:            ''
-baseurl:        /iiifc-theme
+baseurl:        ''
 permalink:      pretty
 title:          "IIIF | International Image Interoperability Framework"
 
 sass:
   style:        compressed
   sass_dir:     _sass
-exclude:
-  - node_modules
+
 collections:
   pages:
     output: true
