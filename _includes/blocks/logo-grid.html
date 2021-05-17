@@ -1,13 +1,13 @@
-<ul>
+<div class="columns is-multiline is-vcentered">
   {% for item in include.items %}
-  <li>
+  <div class="column is-one-quarter">
     <a href="{{ item.link | absolute_url }}">
       {% if item.logo %}
       <img alt="{{ item.name }} logo" src="{{ item.logo | absolute_url }}" />
       {% else %}
       {{ item.name }}
       {% endif %}
-  </a>
-  </li>
+    </a>
+  </div>
   {% endfor %}
-</ul>
+</div>

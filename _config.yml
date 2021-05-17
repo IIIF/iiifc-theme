@@ -15,7 +15,7 @@ collections:
 organization:
   acronym:      IIIF
   title:        International Image Interoperability Framework
-  tagline:      "International Image Interoperability Framework: A community driven image framework with well defined APIs for making the world’s image repositories interoperable and accessible"
+  tagline:      "IIIF is an open standard for delivering high-quality, attributed digital objects online at scale. It’s also an international community developing and implementing the IIIF APIs. IIIF is stewarded by a consortium."
   email:        iiif-discuss@googlegroups.com
   url:          //iiif.io
   logo:         assets/images/logo-sm.png

@@ -1,26 +1,28 @@
-<footer>
-  <!-- <ul>
-  <li>
-    <a href="{{ '/' | absolute_url }}">
-      <img src="{{ site.organization.logo | absolute_url }}"/>
-      <h1>{{ site.title | default: site.organization.title }}</h1>
-    </a>
-  </li>
-  {%- for item in site.data.header-menu -%}
-    <li>
-      {% if item.sub %}
-      {{ item.label }}
-      <ul>
-        {% for sub in item.sub %}
-        <li>
-          <a href="{{ sub.link | absolute_url }}">{{ sub.label }}</a>
-        </li>
+
+<footer id="footer" class="footer">
+  <div class="container">
+    <div class="columns">
+
+      <div class="navbar-brand column is-half">
+        <a class="navbar-item" href="{{ '/' | absolute_url }}">
+          <img src="{{ site.organization.logo | absolute_url }}" alt="{{ site.organization.title | default: site.title }} logo" height="28">
+          <span class="brand-title blue-text">{{ site.organization.title | default: site.title }}</span>
+        </a>
+        <p>{{ site.organization.tagline }}</p>
+      </div>
+      <div class="column"></div>
+      {% for column in site.footer_menu %}
+      <div class="column menu-column">
+        <h4>{{ column.heading }}</h4>
+        <ul>
+        {% for item in column.sub %}
+          <li>
+            <a href="{{ item.link | absolute_url }}">{{ item.label }}</a>
+          </li>
         {% endfor %}
-      </ul>
-      {% elsif item.link %}
-      <a href="{{ item.link | absolute_url }}">{{ item.label }}</a>
-      {% endif %}
-    </li>
-  {%- endfor -%}
-  </ul> -->
+        </ul>
+      </div>
+      {% endfor %}
+    </columns>
+  </div>
 </footer>

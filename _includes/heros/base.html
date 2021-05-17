@@ -1,0 +1,9 @@
+{% assign hero=include.hero %}
+
+<div class="hero-body">
+  <div class="container has-text-centered">
+    <h2 class="title">{{ hero.title }}</h2>
+    <p class="subtitle">{{ hero.subtitle }}</p>
+    {% include misc/button.html button_label=hero.button_label button_link=hero.button_link %}
+  </div>
+</div>
