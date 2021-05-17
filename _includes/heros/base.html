@@ -2,8 +2,10 @@
 
 <div class="hero-body">
   <div class="container has-text-centered">
-    <h2 class="title">{{ hero.title }}</h2>
-    <p class="subtitle">{{ hero.subtitle }}</p>
-    {% include misc/button.html button_label=hero.button_label button_link=hero.button_link %}
+    <h2 class="title">{{ hero.title | default: page.title }}</h2>
+    <p class="subtitle">{{ hero.subtitle | default: page.subtitle }}</p>
+    {% if hero.button %}
+      {% include misc/button.html button_label=hero.button.label button_link=hero.button.link %}
+    {% endif %}
   </div>
 </div>

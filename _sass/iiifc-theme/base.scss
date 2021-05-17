@@ -25,7 +25,7 @@ $family-sans-serif: "PT Sans", sans-serif;
 $family-serif: "Playfair Display", serif;
 
 /* layout overrides */
-$container-max-width: 1040px;
+$container-max-width: 1024px;
 
 @import "fonts";
 @import "node_modules/bulma/bulma.sass";
@@ -52,6 +52,10 @@ $container-max-width: 1040px;
   }
 
   .subtitle {
+    max-width: 619px;
+    text-align: justify;
+    text-align-last: center;
+    margin: .5em auto 2em;
     // font-size: 22px;
   }
 }
@@ -65,11 +69,25 @@ $container-max-width: 1040px;
   .hero.is-info,
   .navbar-link {
     color: $white;
+    &:hover{
+      text-decoration: underline;
+      text-decoration-thickness: 2px;
+      text-underline-offset: 2px;
+    }
+  }
+  .navbar-brand {
+    .navbar-item {
+      text-decoration: none !important;
+      &:hover{
+        text-decoration: none !important;
+      }
+    }
   }
 }
 
 #main {
   font-family: $family-sans-serif;
+  min-height: 50vh;
 
   .hero {
     .title {
@@ -77,16 +95,20 @@ $container-max-width: 1040px;
     }
 
     .subtitle {
+      text-align: justify;
+      text-align-last: center;
       color: $white !important;
       font-size: 20px;
+      max-width: 619px;
       line-height: 24px;
     }
   }
 
   p {
-    text-align: center;
+    text-align: justify;
+    text-align-last: center;
     margin: .5em auto 2em;
-    max-width: 850px;
+    max-width: 619px;
     line-height: 22px;
     font-size: 16px;
     color: $black;
@@ -97,6 +119,7 @@ $container-max-width: 1040px;
     color: $dark-blue;
     font-size: 28px;
     font-weight: bold;
+    text-align: center;
   }
 
   h3 {
@@ -104,14 +127,27 @@ $container-max-width: 1040px;
     color: $dark-blue;
     font-size: 18px;
     font-weight: bold;
+    text-align: center;
   }
   .container-block {
     width: 100%;
     margin: 0 auto;
     padding: 3em 1.5em 3em 1.5em;
   }
-  .container-block:nth-child(odd) {
+  .container-block:nth-child(even) {
     background-color: $light-blue;
+  }
+  .box {
+    transition: transform .3s;
+    &:hover,
+    &:focus {
+      transform: scale3d(1.05, 1.05, 1);
+    }
+  }
+  .column {
+    p {
+      text-align: center;
+    }
   }
 }
 
@@ -133,13 +169,4 @@ $container-max-width: 1040px;
 
 .blue-text {
   color: $blue !important;
-}
-
-
-.box {
-  transition: transform .3s;
-  &:hover,
-  &:focus {
-    transform: scale3d(1.05, 1.05, 1);
-  }
 }

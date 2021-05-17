@@ -1,5 +1,5 @@
 ---
-block-start: '<div class="container-block"><div class="container has-text-centered" markdown="1">'
+block-start: '<div class="container-block is-max-widescreen"><div class="container has-text-centered" markdown="1">'
 block-end: '</div></div>'
 ---
 <!DOCTYPE html>
@@ -7,6 +7,12 @@ block-end: '</div></div>'
   {%- include head.html -%}
 
   <body>
-    {{ content }}
+    {%- include heros/top-with-nav.html hero=page.hero -%}
+
+    <section id="main">
+      {{ content }}
+    </section>
+
+    {%- include footer.html -%}
   </body>
 </html>

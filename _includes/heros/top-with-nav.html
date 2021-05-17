@@ -8,12 +8,13 @@ background-attachment: fixed;
 {% endcapture %}
 {%- endif -%}
 
-<section class="hero is-info is-fullheight" style="{{ style }}">
+<section class="hero is-info {% if hero.is_fullheight -%}is-fullheight{% endif %}" style="{{ style }}">
   <div class="hero-head">
     {% include navbar.html %}
   </div>
-
-  {%- if hero -%}
+  {% if hero %}
   {% include heros/base.html hero=hero %}
-  {%- endif -%}
+  {% else %}
+  {% include heros/base.html %}
+  {% endif %}
 </section>
