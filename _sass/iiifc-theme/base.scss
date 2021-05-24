@@ -9,6 +9,7 @@ $navy: #001927;
 $navy-scrim: rgba(0, 25, 39, 0.8);
 $red: #a40832;
 $grey: #edf0f0;
+$lighter-grey: rgba(237, 240, 240, 0.2);
 $black: #171717;
 $greyish-brown: #4a4a4a;
 $shadow: rgba(60, 64, 67, 0.2);
@@ -26,10 +27,15 @@ $family-serif: "Playfair Display", serif;
 
 /* layout overrides */
 $container-max-width: 1024px;
+$content-max-width: 690px;
 
 @import "fonts";
 @import "node_modules/bulma/bulma.sass";
 
+html {
+  background-color: $lighter-grey;
+  scroll-behavior: smooth;
+}
 
 .brand-title {
   width: 195px;
@@ -52,11 +58,10 @@ $container-max-width: 1024px;
   }
 
   .subtitle {
-    max-width: 619px;
+    max-width: $content-max-width;
     text-align: justify;
     text-align-last: center;
     margin: .5em auto 2em;
-    // font-size: 22px;
   }
 }
 
@@ -99,19 +104,9 @@ $container-max-width: 1024px;
       text-align-last: center;
       color: $white !important;
       font-size: 20px;
-      max-width: 619px;
+      max-width: $content-max-width;
       line-height: 24px;
     }
-  }
-
-  p {
-    text-align: justify;
-    text-align-last: center;
-    margin: .5em auto 2em;
-    max-width: 619px;
-    line-height: 22px;
-    font-size: 16px;
-    color: $black;
   }
 
   h2 {
@@ -119,7 +114,6 @@ $container-max-width: 1024px;
     color: $dark-blue;
     font-size: 28px;
     font-weight: bold;
-    text-align: center;
   }
 
   h3 {
@@ -127,27 +121,36 @@ $container-max-width: 1024px;
     color: $dark-blue;
     font-size: 18px;
     font-weight: bold;
-    text-align: center;
   }
   .container-block {
-    width: 100%;
     margin: 0 auto;
     padding: 3em 1.5em 3em 1.5em;
   }
   .container-block:nth-child(even) {
     background-color: $light-blue;
   }
-  .box {
+  .container {
+    margin: 0 auto;
+    max-width: $container-max-width;
+  }
+  .hover-box {
     transition: transform .3s;
     &:hover,
     &:focus {
       transform: scale3d(1.05, 1.05, 1);
     }
   }
-  .column {
-    p {
-      text-align: center;
-    }
+  .content {
+    max-width: $content-max-width;
+  }
+}
+
+.has-text-centered {
+  p {
+    max-width: $content-max-width;
+    text-align: justify;
+    text-align-last: center;
+    margin: .5em auto 2em;
   }
 }
 
@@ -169,4 +172,23 @@ $container-max-width: 1024px;
 
 .blue-text {
   color: $blue !important;
+}
+
+.toc-sidebar {
+  font-family: $family-serif;
+  font-weight: bold;
+  li {
+    margin-bottom: 10px;
+  }
+  a:hover {
+    color: $dark-blue;
+  }
+  a:active {
+    border-left: $dark-blue;
+  }
+}
+
+.sticky	{
+	position: sticky;
+  top: 1rem;
 }

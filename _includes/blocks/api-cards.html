@@ -2,7 +2,7 @@
 <div class="block columns is-multiline is-vcentered">
   {% for item in include.items %}
     <div class="column is-one-third">
-      <div class="box api-card">
+      <div class="box hover-box api-card">
         <img src="{{ item[1].image | absolute_url }}" style="display:block;margin-left:auto;margin-right:auto;"/>
         <h3>{{ item[1].label }}</h3>
         <p>{{ item[1].description }}</p>
