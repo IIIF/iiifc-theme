@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-/* color overrides */
+/* iiif-c vars */
 $blue: #0073b0;
 $white: #ffffff;
 $dark-blue: #003654;
@@ -14,26 +14,31 @@ $black: #171717;
 $greyish-brown: #4a4a4a;
 $shadow: rgba(60, 64, 67, 0.2);
 
-$background: $light-blue;
+/* bulma overrides */
+
+$background: $lighter-grey;
 $primary: $blue;
+$primary-dark: $navy;
+$text: $black;
+
+$size-7: 0.875rem;
+
 $navbar-burger-color: $white;
 $navbar-dropdown-arrow: $white;
-$navbar-tab-hover-border-bottom-color: $white;
+$navbar-dropdown-item-active-background-color: $white;
 $navbar-dropdown-background-color: $navy;
 
-/* font overrides */
 $family-sans-serif: "PT Sans", sans-serif;
 $family-serif: "Playfair Display", serif;
 
-/* layout overrides */
 $container-max-width: 1024px;
-$content-max-width: 690px;
+$heading-max-width: 60vw;
+$content-max-width: 80vw;
 
 @import "fonts";
 @import "node_modules/bulma/bulma.sass";
 
 html {
-  background-color: $lighter-grey;
   scroll-behavior: smooth;
 }
 
@@ -50,18 +55,16 @@ html {
 }
 
 .hero {
-  color: $white !important;
-
   .title {
-    font-size: 3.5rem;
     font-family: $family-serif;
+    color: $white !important;
+    text-align: center;
+    margin: 0 auto 1.5rem auto;
   }
-
   .subtitle {
+    text-align: center;
+    color: $white !important;
     max-width: $content-max-width;
-    text-align: justify;
-    text-align-last: center;
-    margin: .5em auto 2em;
   }
 }
 
@@ -90,48 +93,31 @@ html {
   }
 }
 
+.container {
+  margin: 0 auto;
+}
+
 #main {
   font-family: $family-sans-serif;
   min-height: 50vh;
 
-  .hero {
-    .title {
-      color: $white !important;
-    }
-
-    .subtitle {
-      text-align: justify;
-      text-align-last: center;
-      color: $white !important;
-      font-size: 20px;
-      max-width: $content-max-width;
-      line-height: 24px;
-    }
-  }
-
   h2 {
     font-family: $family-serif;
     color: $dark-blue;
-    font-size: 28px;
     font-weight: bold;
   }
 
   h3 {
     font-family: $family-serif;
     color: $dark-blue;
-    font-size: 18px;
     font-weight: bold;
   }
   .container-block {
     margin: 0 auto;
-    padding: 3em 1.5em 3em 1.5em;
+    padding: 1.5em;
   }
   .container-block:nth-child(even) {
     background-color: $light-blue;
-  }
-  .container {
-    margin: 0 auto;
-    max-width: $container-max-width;
   }
   .hover-box {
     transition: transform .3s;
@@ -140,14 +126,11 @@ html {
       transform: scale3d(1.05, 1.05, 1);
     }
   }
-  .content {
-    max-width: $content-max-width;
-  }
 }
 
 .has-text-centered {
   p {
-    max-width: $content-max-width;
+    // max-width: $content-max-width;
     text-align: justify;
     text-align-last: center;
     margin: .5em auto 2em;
@@ -159,7 +142,7 @@ html {
   color: $black;
   .menu-column {
     font-family: $family-serif;
-    font-size: 14px;
+    font-size: $size-7;
     line-height: 24px;
     font-weight: bold;
     h4 {
@@ -178,7 +161,8 @@ html {
   font-family: $family-serif;
   font-weight: bold;
   li {
-    margin-bottom: 10px;
+    // margin-bottom: 10px;
+    font-size: $size-7;
   }
   a:hover {
     color: $dark-blue;
@@ -191,4 +175,11 @@ html {
 .sticky	{
 	position: sticky;
   top: 1rem;
+}
+
+pre.highlight {
+  background-color: $black;
+  color: $white;
+  border-radius: 1em;
+  margin: 1em 0 1em 0;
 }
