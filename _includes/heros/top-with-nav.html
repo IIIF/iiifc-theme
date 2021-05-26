@@ -1,14 +1,14 @@
 {%- assign hero = include.hero -%}
 {%- if hero.image -%}
-{% capture style %}
-background-image: linear-gradient(to bottom, rgba(0, 25, 39, 0.56) 65%, rgba(0, 25, 39, 0) 103%), url('{{ hero.image | absolute_url }}');
-background-size: cover;
-background-position: center center;
-background-attachment: fixed;
-{% endcapture %}
+  {% capture style %}
+  background-image: linear-gradient(to bottom, rgba(0, 25, 39, 0.56) 65%, rgba(0, 25, 39, 0) 103%), url('{{ hero.image | absolute_url }}');
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  {% endcapture %}
 {%- endif -%}
 
-<section class="hero is-info {% if hero.is_fullheight -%}is-fullheight{% endif %}" style="{{ style }}">
+<section class="hero is-primary {% if hero.is_fullheight -%}is-fullheight{% endif %}" style="{{ style }}">
   <div class="hero-head">
     {% include navbar.html %}
   </div>
