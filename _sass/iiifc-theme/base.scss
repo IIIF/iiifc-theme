@@ -36,6 +36,7 @@ $content-max-width: 60vw;
 
 @import "fonts";
 @import "node_modules/bulma/bulma.sass";
+@import "syntax.scss";
 
 html {
   scroll-behavior: smooth;
