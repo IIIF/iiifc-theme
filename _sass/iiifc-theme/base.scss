@@ -241,10 +241,28 @@ pre.highlight {
 }
 
 .api-content {
-  table {
-    table-layout: fixed;
-    overflow-y:scroll;
-    display:block;
+  .api-table {
+    overflow-y: scroll;
+    display: block;
+    border-collapse: collapse;
+    td {
+      border: solid 1px $black;
+      border-style: inset;
+    }
+    thead {
+      background-color: $light-blue;
+      color: $dark-blue;
+      font-size: 1.125rem;
+      font-family: $family-serif;
+      th {
+        border: solid 1px $black;
+        border-style: inset;
+      }
+    }
+    tbody tr:last-child td,
+    .content table tbody tr:last-child th {
+      border-bottom-width: 1px;
+    }
   }
   .rfc {
     color: #d55;
