@@ -286,3 +286,8 @@ pre.highlight {
   font-family: $family-serif;
   font-weight: bold;
 }
+
+.sticky {
+  max-height: 95vh;
+  overflow-x: scroll;
+}
