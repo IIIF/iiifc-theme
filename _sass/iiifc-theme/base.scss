@@ -21,6 +21,10 @@ $primary: $blue;
 $primary-dark: $navy;
 $text: $black;
 
+
+$box-shadow: 0 1px 2px 1px $shadow;
+$box-radius: 8px;
+
 $size-7: 0.875rem;
 
 $navbar-burger-color: $white;
@@ -168,8 +172,8 @@ h3 { font-size: 1.25rem; }
 .toc-sidebar {
   font-family: $family-serif;
   font-weight: bold;
+
   li {
-    // margin-bottom: 10px;
     font-size: $size-7;
   }
   a:hover {
@@ -270,6 +274,23 @@ pre.highlight {
     font-style: normal;
     font-size: 1.2em;
     line-height: 0.8333;
+  }
+  .warning {
+    border-left: 4px solid #E05252;
+    background: #fbe9e9;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 24px;
+  }
+
+  .alert {
+    border-left: 4px solid #E0CB52;
+    background: #FCFAEE;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 24px;
   }
 }
 
