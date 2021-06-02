@@ -1,0 +1,47 @@
+{% assign hero = include.hero %}
+{% assign top_nav = hero.top_nav | default: include.top_nav %}
+{% assign breadcrumbs = include.breadcrumbs | default: page.breadcrumbs | default: layout.breadcrumbs %}
+
+{% if hero.image %}
+  {%- capture style -%}
+  background-image: linear-gradient(to bottom, rgba(0, 25, 39, 0.56) 65%, rgba(0, 25, 39, 0) 103%), url('{{ hero.image | absolute_url }}');
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  {%- endcapture -%}
+{% endif %}
+
+
+<section class="hero is-primary" style="{{ style }}">
+  {% if top_nav %}
+  <div class="hero-head">
+    {% include navbar.html %}
+  </div>
+  {% endif %}
+
+  <div class="hero-body container">
+
+    {% if top_nav and breadcrumbs %}
+    <nav class="breadcrumb is-centered" aria-label="breadcrumbs">
+      <ul>
+        {% for crumb in breadcrumbs %}
+          <li><a href="{{ crumb.link | absolute_url }}">{{ crumb.label }}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+    {% endif %}
+
+    <div class="container has-text-centered">
+      {% if top_nav %}
+      <h1 class="title is-size-2 is-size-3-mobile is-size-desktop is-size-1-widescreen">{{ hero.title | default: page.title }}</h1>
+      {% else %}
+      <h2 class="title">{{ hero.title | default: page.title }}</h2>
+      {% endif %}
+      <p class="subtitle is-size-6">{{ hero.subtitle | default: page.subtitle }}</p>
+
+      {% if hero.button %}
+        {% include misc/button.html button_label=hero.button.label button_link=hero.button.link %}
+      {% endif %}
+    </div>
+  </div>
+</section>
