@@ -16,8 +16,8 @@ e.g.:
   {%- for item in include.items -%}
     <figure class="column">
       <a href="{{ item.link | absolute_url }}">
-        <img alt="{{ item.alt_text | default: item.label }}" src="{{ item.image | absolute_url }}"/>
-        <figcaption>{{ item.label }}</figcaption>
+        <img alt="{{ item.alt_text }}" src="{{ item.image | absolute_url }}"/>
+        <p class="is-size-7">{{ item.label }}</p>
       </a>
     </figure>
   {%- endfor -%}

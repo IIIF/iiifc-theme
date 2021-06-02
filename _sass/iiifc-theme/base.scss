@@ -44,8 +44,20 @@ $container-max-width: 1024px;
 $content-max-width: 620px;
 
 @import "fonts";
-@import "node_modules/bulma/bulma.sass";
 @import "syntax.scss";
+
+@import "node_modules/bulma/sass/utilities/_all.sass";
+@import "node_modules/bulma/sass/base/_all.sass";
+@import "node_modules/bulma/sass/components/_all.sass";
+@import "node_modules/bulma/sass/grid/_all.sass";
+@import "node_modules/bulma/sass/helpers/_all.sass";
+@import "node_modules/bulma/sass/layout/_all.sass";
+
+@import "node_modules/bulma/sass/elements/box.sass";
+@import "node_modules/bulma/sass/elements/button.sass";
+@import "node_modules/bulma/sass/elements/container.sass";
+@import "node_modules/bulma/sass/elements/content.sass";
+@import "node_modules/bulma/sass/elements/title.sass";
 
 html {
   scroll-behavior: smooth;

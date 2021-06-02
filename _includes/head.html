@@ -3,7 +3,7 @@
   <title>
     {% if page.title %}{{ page.title }} &mdash; {% endif %}{{ site.title | default: site.organization.title }}
   </title>
-  <meta name="description" content="{{ site.description | default: site.organization.description }}">
+  <meta name="description" content="{{ site.tagline | default: site.organization.tagline }}">
   <link rel="shortcut icon" href="{%- if site.logo -%}{{ site.logo | absolute_url }}{%- else -%}{{ site.organization.logo | absolute_url }}{%- endif -%}">
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,4 +12,8 @@
   {%- if jekyll.environment == 'production' and site.google_analytics -%}
     {%- include misc/google-analytics.html -%}
   {%- endif -%}
+
+  {% if page.hero.image %}
+  <link rel="preload" as="image" href="{{ page.hero.image | absolute_url }}">
+  {% endif %}
 </head>

@@ -17,7 +17,7 @@
         {%- for item in site.navbar_menu -%}
           {% if item.sub %}
             <div class="navbar-item has-dropdown is-hoverable">
-              <a class="navbar-link" {%- if item.link -%}href="{{ item.link | absolute_url }}"{%- endif -%}>
+              <a class="navbar-link" {%- if item.link -%} href="{{ item.link | absolute_url }}"{%- endif -%}>
                 {{ item.label }}
               </a>
               <div class="navbar-dropdown is-boxed is-active">
