@@ -22,9 +22,12 @@ $primary-dark: $navy;
 $text: $black;
 
 
+$card-footer-border-top: none;
+
 $box-shadow: 0 1px 2px 1px $shadow;
 $box-radius: 8px;
 
+$size-5: 1.125rem;
 $size-7: 0.875rem;
 
 $navbar-burger-color: $white;
@@ -32,11 +35,13 @@ $navbar-dropdown-arrow: $white;
 $navbar-dropdown-item-active-background-color: $white;
 $navbar-dropdown-background-color: $navy;
 
+$hero-body-padding: 3.5rem 3.5rem 5rem 3.5rem;
+
 $family-sans-serif: "PT Sans", sans-serif;
 $family-serif: "Playfair Display", serif;
 
 $container-max-width: 1024px;
-$content-max-width: 60vw;
+$content-max-width: 620px;
 
 @import "fonts";
 @import "node_modules/bulma/bulma.sass";
@@ -60,9 +65,19 @@ h5 {
   @include heading;
 }
 
+p {
+  max-width: $content-max-width;
+}
+
 h1 { font-size: 2.375rem; }
-h2 { font-size: 1.75rem; }
-h3 { font-size: 1.25rem; }
+h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1.75rem;
+}
+h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1.25rem;
+}
 
 .brand-title {
   width: 195px;
@@ -109,9 +124,10 @@ h3 { font-size: 1.25rem; }
   }
   .navbar-brand {
     .navbar-item {
-      text-decoration: none !important;
+      text-decoration: none;
+      background-color: unset;
       &:hover{
-        text-decoration: none !important;
+        text-decoration: none;
       }
     }
   }
@@ -128,9 +144,9 @@ h3 { font-size: 1.25rem; }
 
   .container-block {
     margin: 0 auto;
-    padding: 1.5em;
+    padding: 2.75rem;
   }
-  .container-block:nth-child(even) {
+  .container-block:nth-child(odd) {
     background-color: $light-blue;
   }
   .hover-box {
@@ -197,7 +213,7 @@ pre.highlight {
   margin: 0 0 1em 0;
 
   code {
-    font-family: Courier;
+    font-family: "Courier Prime", monospace;
   }
 }
 
@@ -311,4 +327,43 @@ pre.highlight {
 .sticky {
   max-height: 95vh;
   overflow-x: scroll;
+}
+
+.same-height-column {
+  display: flex;
+  width: 100%;
+}
+
+.iiif-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .title {
+    @include heading;
+    font-size: 1.25rem;
+  }
+
+  .subtitle {
+    font-size: 1em;
+    margin-top: unset !important;
+  }
+
+  img {
+    display: block;
+    margin: 1rem auto;
+  }
+
+  img.iiif-icon {
+    max-height: 3.5rem;
+    width: auto;
+  }
+
+  footer {
+    font-family:'Playfair Display';
+    p {
+      margin: 0 auto;
+      font-weight: bold;
+    }
+  }
 }

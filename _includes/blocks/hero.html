@@ -4,13 +4,17 @@
 
 {% if hero.image %}
   {%- capture style -%}
-  background-image: linear-gradient(to bottom, rgba(0, 25, 39, 0.56) 65%, rgba(0, 25, 39, 0) 103%), url('{{ hero.image | absolute_url }}');
+  background-image: linear-gradient(to bottom, rgba(0, 25, 39, 0.68), rgba(0, 25, 39, 0.68)), url('{{ hero.image | absolute_url }}');
   background-size: cover;
-  background-position: center center;
+  background-position: bottom center;
   background-attachment: fixed;
   {%- endcapture -%}
 {% endif %}
 
+{% comment %}
+background-blend-mode: darken;
+background-image: linear-gradient(to bottom, rgba(0, 25, 39, 0.56) 65%, rgba(0, 25, 39, 0) 65%), url('{{ hero.image | absolute_url }}');
+{% endcomment %}
 
 <section class="hero is-primary" style="{{ style }}">
   {% if top_nav %}
@@ -37,7 +41,7 @@
       {% else %}
       <h2 class="title">{{ hero.title | default: page.title }}</h2>
       {% endif %}
-      <p class="subtitle is-size-6">{{ hero.subtitle | default: page.subtitle }}</p>
+      <p class="subtitle is-size-5">{{ hero.subtitle | default: page.subtitle }}</p>
 
       {% if hero.button %}
         {% include misc/button.html button_label=hero.button.label button_link=hero.button.link %}

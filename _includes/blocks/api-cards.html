@@ -1,21 +1,24 @@
 
-<div class="block columns is-multiline is-vcentered">
+<div class="block columns is-multiline">
   {% for item in include.items %}
-    <div class="column is-one-third">
-      <div class="box hover-box api-card">
-        <img src="{{ item[1].image | absolute_url }}" style="display:block;margin-left:auto;margin-right:auto;"/>
-        <h3>{{ item[1].label }}</h3>
-        <p class="has-text-left">{{ item[1].description }}</p>
-        <div class="columns" style="font-family:'Playfair Display';">
+    <div class="column is-one-third same-height-column">
+      <div class="box hover-box iiif-card">
+        {% if item[1].image %}
+          <img class="iiif-icon" src="{{ item[1].image | absolute_url }}" />
+        {% endif %}
+
+        <h3 class="title">{{ item[1].label }}</h3>
+        <p class="subtitle has-text-left">{{ item[1].description }}</p>
+        <footer class="columns">
           <div class="column">
-            <p style="text-align:left;margin:0 auto;font-weight:bold;">
+            <p class="has-text-left">
               <a href="{{ '/api/' | append: item[0] | absolute_url }}">{{ include.link_text }} ></a>
             </p>
           </div>
           <div class="column">
-            <p style="text-align:right;margin:0 auto;font-weight:bold;">{{ item[1].latest.label | capitalize }}</p>
+            <p class="has-text-right">{{ item[1].latest.label | capitalize }}</p>
           </div>
-        </div>
+        </footer>
       </div>
     </div>
   {% endfor %}
