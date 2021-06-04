@@ -39,6 +39,7 @@ $hero-body-padding: 3.5rem 3.5rem 5rem 3.5rem;
 
 $family-sans-serif: "PT Sans", sans-serif;
 $family-serif: "Playfair Display", serif;
+$family-serif-alt: "Source Serif Pro", serif;
 
 $container-max-width: 1024px;
 $content-max-width: 620px;
@@ -158,7 +159,7 @@ h3 {
     margin: 0 auto;
     padding: 2.75rem;
   }
-  .container-block:nth-child(odd) {
+  .container-block:nth-child(odd):not(:only-child) {
     background-color: $light-blue;
   }
   .hover-box {
@@ -350,6 +351,7 @@ pre.highlight {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 100%;
 
   .title {
     @include heading;
@@ -367,7 +369,7 @@ pre.highlight {
   }
 
   img.iiif-icon {
-    max-height: 3.5rem;
+    max-height: 2rem;
     width: auto;
   }
 
@@ -377,5 +379,46 @@ pre.highlight {
       margin: 0 auto;
       font-weight: bold;
     }
+  }
+}
+
+.lg-icon {
+  height: 3rem;
+  width: auto;
+}
+
+p {
+  .inline-icon {
+    display: inline;
+    margin: 0 0.125em;
+    padding: 0;
+    vertical-align: baseline;
+    height: 0.75em;
+  }
+}
+
+.event-card {
+  padding: 0;
+  width: 100%;
+
+  .date-block-container {
+    height: 100%;
+    .date-block {
+      background-color: $navy;
+      height:100%;
+      .date-month {
+        text-transform: uppercase;
+        font-family: $family-serif;
+        color: $white;
+      }
+      .date-num {
+        font-family: $family-sans-serif;
+        color: $white;
+      }
+    }
+  }
+  .event-info {
+    font-family: $family-serif-alt;
+    color: $greyish-brown;
   }
 }

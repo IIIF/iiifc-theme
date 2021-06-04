@@ -1,0 +1,25 @@
+<div class="block columns is-multiline">
+  {% for event in include.items %}
+  <div class="column is-half same-height-column">
+    <div class="event-card card box hover-box columns is-gapless">
+      <div class="date-block-container column is-one-quarter">
+        <div class="card-content date-block">
+          <span class="title date-month is-size-4">{{ event.date | date: "%b" }}</span>
+          <span class="subtitle is-size-1 date-num">{{ event.date | date: "%d" }}</span>
+        </div>
+      </div>
+      <div class="column">
+        <div class="event-info card-content has-text-left">
+          <h3 class="event-title is-size-5"><a href="{{ event.link }}">{{ event.title }}</a></h3>
+          <p class="event-details has-text-left">
+            <img class="inline-icon" src="{{ 'assets/images/icons/map-pin.webp' | absolute_url }}"/>
+            {{ event.location }}<br>
+            <img class="inline-icon" src="{{ 'assets/images/icons/calendar.webp' | absolute_url }}"/>
+            <time datetime="2016-1-1">{{ event.date | date: "%A, %B %e at %I:%M%P" }}</time>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>

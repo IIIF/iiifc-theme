@@ -5,10 +5,10 @@
 
       <div class="navbar-brand column is-half">
         <a class="navbar-item" href="{{ '/' | absolute_url }}">
-          <img src="{{ site.organization.logo | absolute_url }}" alt="{{ site.organization.title | default: site.title }} logo" height="28">
-          <span class="brand-title blue-text">{{ site.organization.title | default: site.title }}</span>
+          <img src="{{ site.iiif.logo | absolute_url }}" alt="{{ site.iiif.acronyme }} logo" height="28">
+          <span class="brand-title blue-text">{{ site.iiif.title | default: site.title }}</span>
         </a>
-        <p>{{ site.organization.tagline }}</p>
+        <p>{{ site.iiif.tagline }}</p>
       </div>
       <div class="column"></div>
       {% for column in site.footer_menu %}

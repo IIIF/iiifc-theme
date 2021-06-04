@@ -3,7 +3,7 @@
     <div class="column is-one-third same-height-column">
       <div class="box hover-box iiif-card">
         {% if item.image %}
-          <img class="iiif-icon" src="{{ item.image | absolute_url }}" />
+          <img class="iiif-icon" src="{{ item.image | default: 'assets/images/defaults/just-a-square.png' | absolute_url }}" />
         {% endif %}
 
         <h3 class="title {% unless item.image %} has-text-left{% endunless %}">{{ item.label }}</h3>
@@ -11,7 +11,7 @@
         {% if item.link %}
         <footer>
           <p class="has-text-left">
-            <a href="{{ item.link | absolute_url }}">{{ item.link_text }} ></a>
+            <a href="{{ item.link | absolute_url }}">{{ item.link_text | default: 'Learn More' }} ></a>
           </p>
         </footer>
         {% endif %}

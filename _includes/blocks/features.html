@@ -15,7 +15,7 @@ e.g.:
 <div class="block columns">
   {% for item in include.items %}
     <div class="column">
-      <img src="{{ item.image | absolute_url }}"/>
+      <img class="lg-icon" src="{{ item.image | absolute_url }}"/>
       <h3>{{ item.label }}</h3>
       <p>{{ item.description }}</p>
     </div>
