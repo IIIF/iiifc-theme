@@ -2,8 +2,8 @@
   <div class="container">
     <div class="navbar-brand">
       <a class="navbar-item" href="{{ '/' | absolute_url }}">
-        <img src="{{ site.organization.logo | absolute_url }}" alt="{{ site.organization.title | default: site.title }} logo" height="28">
-        <span class="brand-title">{{ site.organization.title | default: site.title }}</span>
+        <img src="{{ site.iiif.logo | absolute_url }}" alt="{{ site.iiif.acronym }} logo" height="28">
+        <span class="brand-title">{{ site.iiif.acronym }} | {{ site.title | default: site.iiif.title }}</span>
       </a>
       <div class="navbar-burger" data-target="navbar" onclick="document.querySelector('.navbar-menu').classList.toggle('is-active');">
         <span></span>
