@@ -1,7 +1,7 @@
 <head>
   <meta charset="utf-8">
   <title>
-    {{ site.iiif.acronym }} | {% if page.title %}{{ page.title }} {% endif %}
+    {{ theme.acronym }} | {% if page.title %}{{ page.title }} {% endif %}
   </title>
   <meta name="description" content="{{ site.tagline | default: site.organization.tagline }}">
   <link rel="shortcut icon" href="{%- if site.logo -%}{{ site.logo | absolute_url }}{%- else -%}{{ site.organization.logo | absolute_url }}{%- endif -%}">
