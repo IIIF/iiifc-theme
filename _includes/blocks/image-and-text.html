@@ -1,0 +1,25 @@
+{% if include.image_align == 'left' %}
+<div class="columns">
+  <div class="column is-half">
+    <img src="{{ include.image | absolute_url }}"/>
+  </div>
+  <div class="column has-text-left">
+    <p class="has-text-left">{{ include.content }}</p>
+    {% if include.button_label %}
+    {% include misc/button.html button_label=include.button_label button_link=include.button_link %}
+    {% endif %}
+  </div>
+</div>
+{% else %}
+<div class="columns">
+  <div class="column has-text-right is-half">
+    <p class="has-text-right">{{ include.content }}</p>
+    {% if include.button_label %}
+    {% include misc/button.html button_label=include.button_label button_link=include.button_link %}
+    {% endif %}
+  </div>
+  <div class="column">
+    <img src="{{ include.image | absolute_url }}"/>
+  </div>
+</div>
+{% endif %}
