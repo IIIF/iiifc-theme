@@ -22,7 +22,8 @@ iiifc-theme:
   title:      International Image Interoperability Framework
   tagline:    "International Image Interoperability Framework: A community driven image framework with well defined APIs for making the world’s image repositories interoperable and accessible"
   email:      iiif-discuss@googlegroups.com
-  url:        //iiif.io
+  root_url:   https://iiif.io
+  api_url:    https://iiif.io/api/
   navbar_menu:
     - label: 'Home'
       link: '/'

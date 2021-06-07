@@ -17,7 +17,7 @@
         <ul>
         {% for item in column.sub %}
           <li>
-            <a href="{{ item.link | absolute_url }}">{{ item.label }}</a>
+            <a href="{{ item.link | prepend: prefix | absolute_url }}">{{ item.label }}</a>
           </li>
         {% endfor %}
         </ul>
