@@ -1,17 +1,3 @@
-{% comment %}
-takes:
-- `items` (hash array) [NO DEFAULT]
-
-each `item` takes:
-- `image` (text) [NO DEFAULT]
-- `link` (text) [NO DEFAULT]
-- `label` (text) [NO DEFAULT]
-- `alt_text` (text) [DEFAULT `label`]
-
-e.g.:
-{% include blocks/carousel.html items=items %}
-
-{% endcomment %}
 <div class="block columns">
   {%- for item in include.items -%}
     <figure class="column">

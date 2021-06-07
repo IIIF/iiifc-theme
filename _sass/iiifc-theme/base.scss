@@ -22,8 +22,9 @@ $primary-dark: $navy;
 $text: $black;
 $notification-background-color: $red;
 
-
 $card-footer-border-top: none;
+
+$tabs-border-bottom-width: 2px;
 
 $box-shadow: 0 1px 2px 1px $shadow;
 $box-radius: 8px;
@@ -455,4 +456,8 @@ p {
       font-family: $family-sans-serif;
     }
   }
+}
+
+.tabs ul {
+  border-bottom: none;
 }

@@ -1,0 +1,21 @@
+<script src="{{ 'assets/js/tabSwitch.js' | absolute_url }}"></script>
+
+<nav class="tabs is-fullwidth is-large">
+  <div class="container">
+    <ul>
+      {% for tab in include.tabs %}
+      <li class="tab {% if forloop.first %}is-active{% endif %}" onclick="openTab(event,'{{ tab.label | slugify }}')">
+        <h3><a>{{ tab.label }}</a></h3>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+  {% for tab in include.tabs %}
+  <div id="{{ tab.label | slugify }}" class="content-tab" {% unless forloop.first %}style="display:none;"{% endunless %}>
+    <p>{{ tab.content }}</p>
+  </div>
+  {% endfor %}
+</div>

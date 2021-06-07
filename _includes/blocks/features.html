@@ -1,17 +1,3 @@
-{% comment %}
-takes:
-- `items` (hash array) [NO DEFAULT]
-
-each `item` takes:
-- `label` (text) [NO DEFAULT]
-- `description` (text) [NO DEFAULT]
-- `image` (text) [NO DEFAULT]
-
-e.g.:
-{% include blocks/features.html items=items %}
-
-{% endcomment %}
-
 <div class="block columns">
   {% for item in include.items %}
     <div class="column">
