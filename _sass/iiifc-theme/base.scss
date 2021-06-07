@@ -20,6 +20,7 @@ $background: $lighter-grey;
 $primary: $blue;
 $primary-dark: $navy;
 $text: $black;
+$notification-background-color: $red;
 
 
 $card-footer-border-top: none;
@@ -58,6 +59,8 @@ $content-max-width: 620px;
 @import "node_modules/bulma/sass/elements/button.sass";
 @import "node_modules/bulma/sass/elements/container.sass";
 @import "node_modules/bulma/sass/elements/content.sass";
+@import "node_modules/bulma/sass/elements/other.sass";
+@import "node_modules/bulma/sass/elements/notification.sass";
 @import "node_modules/bulma/sass/elements/title.sass";
 
 html {
@@ -420,5 +423,36 @@ p {
   .event-info {
     font-family: $family-serif-alt;
     color: $greyish-brown;
+  }
+}
+
+.margin-unset {
+  margin-left: unset !important;
+}
+
+.iiif-notification {
+  background-color: $red;
+  margin-bottom: 0 !important;
+  border-radius: 0;
+
+  .delete {
+    float:right;
+  }
+
+  .message-header {
+    background-color: $red;
+    padding: 1.5rem 0;
+
+    .title {
+      color: $white;
+      font-size: 1.25rem;
+      font-family: $family-serif;
+    }
+
+    .subtitle {
+      color: $white;
+      font-size: 1rem;
+      font-family: $family-sans-serif;
+    }
   }
 }

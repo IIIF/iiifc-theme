@@ -1,0 +1,15 @@
+<script src="{{ 'assets/js/deleteButton.js' | absolute_url }}"></script>
+{% assign notification = include.notification %}
+<div class="iiif-notification message">
+  <div class="message-header">
+    <div class="container">
+      <button class="delete"></button>
+      <p class="title">{{ notification.title }}</p>
+      <p class="subtitle">{{ notification.subtitle }}
+      {% if notification.link %}
+        <a href="{{ notification.link | absolute_url }}">{{ notification.link_label }}</a>
+      {% endif %}
+      </p>
+    </div>
+  </div>
+</div>
