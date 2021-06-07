@@ -4,15 +4,6 @@ block-end: '</div></div>'
 ---
 <!DOCTYPE html>
 <html lang='en'>
-  {%- include head.html -%}
-  {%- capture prefix -%}
-    {%- if site.is_root -%}
-      {{ '' }}
-    {%- else -%}
-      {{ theme.root_url }}
-    {%- endif -%}
-  {%- endcapture -%}
-
   <body>
     {%- if site.notification.enabled -%}
     {%- include misc/notification.html notification=site.notification -%}

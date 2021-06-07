@@ -1,7 +1,7 @@
 <nav id="navbar" class="navbar is-transparent is-spaced">
   <div class="container">
     <div class="navbar-brand">
-      <a class="navbar-item" href="{{ '/' | prepend: prefix | absolute_url }}">
+      <a class="navbar-item" href="{{ '/' | absolute_url }}">
         <img src="{{ theme.logo | absolute_url }}" alt="{{ theme.acronym }} logo" height="28">
         <span class="brand-title">{{ theme.title }}</span>
       </a>
@@ -17,17 +17,17 @@
         {%- for item in theme.navbar_menu -%}
           {% if item.sub %}
             <div class="navbar-item has-dropdown is-hoverable">
-              <a class="navbar-link" {%- if item.link -%} href="{{ item.link | prepend: prefix | absolute_url }}"{%- endif -%}>
+              <a class="navbar-link" {%- if item.link -%} href="{{ item.link | absolute_url }}"{%- endif -%}>
                 {{ item.label }}
               </a>
               <div class="navbar-dropdown is-boxed is-active">
                 {% for sub in item.sub %}
-                  <a class="navbar-item" href="{{ sub.link | prepend: prefix | absolute_url }}">{{ sub.label }}</a>
+                  <a class="navbar-item" href="{{ sub.link | absolute_url }}">{{ sub.label }}</a>
                 {% endfor %}
               </div>
             </div>
           {% else %}
-            <a class="navbar-item" href="{{ item.link | prepend: prefix | absolute_url }}">{{ item.label }}</a>
+            <a class="navbar-item" href="{{ item.link | absolute_url }}">{{ item.label }}</a>
           {% endif %}
         {%- endfor -%}
       </div>
