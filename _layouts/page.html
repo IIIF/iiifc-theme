@@ -1,0 +1,8 @@
+---
+layout: default
+block-start: '<div class="container-block is-max-widescreen"><div class="container content api-content" markdown="1">'
+block-end: '</div></div>'
+---
+{{ layout.block-start }}
+{% include api/anchor_headings.html html=content anchorBody="#" %}
+{{ layout.block-end }}

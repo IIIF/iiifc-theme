@@ -278,7 +278,11 @@ pre.highlight {
 }
 
 .api-content {
-  .api-table {
+  p,
+  li {
+    max-width: $container-max-width;
+  }
+  table {
     overflow-y: scroll;
     display: block;
     border-collapse: collapse;
@@ -460,4 +464,8 @@ p {
 
 .tabs ul {
   border-bottom: none;
+}
+
+hr {
+  background-color: $grey;
 }
