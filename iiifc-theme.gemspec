@@ -21,6 +21,7 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "jekyll-data"
   spec.add_runtime_dependency "jekyll-gzip"
   spec.add_runtime_dependency "jekyll-redirect-from"
+  spec.add_runtime_dependency "jekyll-sitemap"
 
   spec.add_development_dependency "bundler"
 end
