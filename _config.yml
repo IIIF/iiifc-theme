@@ -59,7 +59,7 @@ iiifc-theme:
         - label: 'How It Works'
           link:  ''
         - label: 'Documentation'
-          link:  '*api/api'
+          link:  *api'/api'
         - label: 'Demos'
           link:  ''
         - label: 'Tutorials'
