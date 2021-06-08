@@ -4,7 +4,7 @@
     <div class="column is-one-third same-height-column">
       <div class="box hover-box iiif-card">
         {% if item[1].image %}
-          <img class="iiif-icon" src="{{ item[1].image | absolute_url }}" />
+          <img class="iiif-icon" src="{{ item[1].image | absolute_url }}" alt="{{ item[1].alt }}" />
         {% endif %}
 
         <h3 class="title">{{ item[1].label }}</h3>
@@ -12,7 +12,7 @@
         <footer class="columns">
           <div class="column">
             <p class="has-text-left">
-              <a href="{{ '/api/' | append: item[0] | absolute_url }}">{{ include.link_text }} ></a>
+              <a href="{{ 'https://preview.iiif.io' | append: item[0] }}" title="{{ site.api_url }}">{{ include.link_text }} ></a>
             </p>
           </div>
           <div class="column">

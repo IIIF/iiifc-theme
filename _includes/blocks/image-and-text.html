@@ -1,7 +1,7 @@
 {% if include.image_align == 'left' %}
 <div class="columns">
   <div class="column is-half">
-    <img src="{{ include.image | absolute_url }}"/>
+    <img src="{{ include.image | absolute_url }}"  alt="{{ include.alt_text }}" />
   </div>
   <div class="column has-text-left">
     <p class="has-text-left">{{ include.content }}</p>
@@ -19,7 +19,7 @@
     {% endif %}
   </div>
   <div class="column">
-    <img src="{{ include.image | absolute_url }}"/>
+    <img src="{{ include.image | absolute_url }}"  alt="{{ include.alt_text }}" />
   </div>
 </div>
 {% endif %}

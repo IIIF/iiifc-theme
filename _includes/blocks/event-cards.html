@@ -13,9 +13,9 @@
         <div class="event-info card-content">
           <h3 class="event-title is-size-5 has-text-left"><a href="{{ event.link }}">{{ event.title }}</a></h3>
           <p class="event-details has-text-left">
-            <img class="inline-icon" src="{{ 'assets/images/icons/map-pin.webp' | absolute_url }}"/>
+            <img class="inline-icon" src="{{ 'assets/images/icons/map-pin.webp' | absolute_url }}" alt="Event location"/>
             {{ event.location }}<br>
-            <img class="inline-icon" src="{{ 'assets/images/icons/calendar.webp' | absolute_url }}"/>
+            <img class="inline-icon" src="{{ 'assets/images/icons/calendar.webp' | absolute_url }}" alt="Event date"/>
             <time datetime="2016-1-1">{{ event.date | date: "%A, %B %e at %I:%M%P" }}</time>
           </p>
         </div>
