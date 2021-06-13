@@ -1,9 +1,9 @@
-<div class="columns is-multiline is-vcentered">
+<div class="columns logo-grid is-multiline is-vcentered">
   {% for item in include.items %}
-  <div class="column is-one-fifth">
+  <div class="column is-one-quarter">
     <a href="{{ item.link | absolute_url }}">
       {% if item.logo %}
-      <img alt="{{ item.name }} logo" src="{{ item.logo | absolute_url }}" />
+      <img class="p-3 inline-logo" alt="{{ item.name }} logo" src="{{ item.logo | absolute_url }}" />
       {% else %}
       {{ item.name }}
       {% endif %}
