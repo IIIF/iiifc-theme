@@ -469,3 +469,10 @@ p {
 hr {
   background-color: $grey;
 }
+
+.center-cropped-demo {
+  object-fit: cover;
+  object-position: center;
+  height: 150px;
+  width: 100%;
+}
