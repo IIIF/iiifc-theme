@@ -1,22 +1,24 @@
 
 <div class="block columns is-multiline">
   {% for item in include.items %}
+    {% assign key = item[0] %}
+    {% assign api = item[1] %}
     <div class="column is-one-third same-height-column">
       <div class="box hover-box iiif-card">
-        {% if item[1].image %}
+        {% if api.image %}
           <img class="iiif-icon" src="{{ item[1].image | absolute_url }}" alt="{{ item[1].alt }}" />
         {% endif %}
 
-        <h3 class="title">{{ item[1].label }}</h3>
-        <p class="subtitle has-text-left">{{ item[1].description }}</p>
+        <h3 class="title">{{ api.label }}</h3>
+        <p class="subtitle has-text-left">{{ api.description }}</p>
         <footer class="columns">
           <div class="column">
             <p class="has-text-left">
-              <a href="{{ 'https://preview.iiif.io' | append: item[0] }}" title="{{ site.api_url }}">{{ include.link_text }} ></a>
+              <a href="{{ site.api_url | append: '/' | append: key }}" title="{{ site.api_url }}">{{ include.link_text }} ></a>
             </p>
           </div>
           <div class="column">
-            <p class="has-text-right">{{ item[1].latest.label | capitalize }}</p>
+            <p class="has-text-right">{{ api.latest.label | capitalize }}</p>
           </div>
         </footer>
       </div>
