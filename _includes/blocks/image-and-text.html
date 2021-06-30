@@ -4,7 +4,7 @@
     <img src="{{ include.image | absolute_url }}"  alt="{{ include.alt_text }}" />
   </div>
   <div class="column has-text-left">
-    <p class="has-text-left">{{ include.content }}</p>
+    {{ include.content | markdownify }}
     {% if include.button_label %}
     {% include misc/button.html button_label=include.button_label button_link=include.button_link %}
     {% endif %}
@@ -12,14 +12,19 @@
 </div>
 {% else %}
 <div class="columns">
-  <div class="column has-text-right is-half">
-    <p class="has-text-right">{{ include.content }}</p>
+  <div class="column is-half">
+    {{ include.content | markdownify }}
     {% if include.button_label %}
     {% include misc/button.html button_label=include.button_label button_link=include.button_link %}
     {% endif %}
   </div>
   <div class="column">
-    <img src="{{ include.image | absolute_url }}"  alt="{{ include.alt_text }}" />
+    <figure class="image">
+      <img src="{{ include.image | absolute_url }}"  alt="{{ include.alt_text }}" />
+      {% if include.caption %}
+      <figcaption class="caption">{{ include.caption }}</figcaption>
+      {% endif %}
+    </figure>
   </div>
 </div>
 {% endif %}

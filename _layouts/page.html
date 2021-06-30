@@ -1,6 +1,8 @@
 ---
 layout: default
 ---
-{{ layout.block-start }}
-{% include api/anchor_headings.html html=content anchorBody="#" %}
-{{ layout.block-end }}
+{{ theme.block-start }}
+  <div class="content">
+    {{ content }}
+  </div>
+{{ theme.block-end }}
