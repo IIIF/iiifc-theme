@@ -10,7 +10,6 @@ sass:
   style:        compressed
   sass_dir:     _sass
 
-
 plugins:
   - jekyll-data
   - jekyll-gzip
@@ -24,6 +23,9 @@ iiifc-theme:
   email:      iiif-discuss@googlegroups.com
   root_url:   https://iiif.io
   api_url:    https://iiif.io/api/
+  block-start: "<div class='container-block is-max-widescreen'><div class='container' markdown='1'>"
+  block-center-start: '<div class="container-block is-max-widescreen"><div class="container has-text-centered" markdown="1">'
+  block-end: '</div></div>'
   navbar_menu:
     - label: 'Home'
       link: '/'

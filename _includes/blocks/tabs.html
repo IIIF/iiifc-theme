@@ -1,6 +1,6 @@
 <script src="{{ 'assets/js/tabSwitch.js' | absolute_url }}"></script>
 
-<nav class="tabs is-fullwidth is-large">
+<nav class="tabs is-fullwidth has-text-centered">
   <div class="container">
     <ul>
       {% for tab in include.tabs %}
@@ -12,7 +12,7 @@
   </div>
 </nav>
 
-<div class="container">
+<div class="container has-text-centered">
   {% for tab in include.tabs %}
   <div id="{{ tab.label | slugify }}" class="content-tab" {% unless forloop.first %}style="display:none;"{% endunless %}>
     <p>{{ tab.content }}</p>
