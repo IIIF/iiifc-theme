@@ -13,6 +13,7 @@ $lighter-grey: rgba(237, 240, 240, 0.2);
 $black: #171717;
 $greyish-brown: #4a4a4a;
 $shadow: rgba(60, 64, 67, 0.2);
+$caption-grey: #5f5f5f;
 
 /* bulma overrides */
 
@@ -43,8 +44,8 @@ $family-sans-serif: "PT Sans", sans-serif;
 $family-serif: "Playfair Display", serif;
 $family-serif-alt: "Source Serif Pro", serif;
 
-$container-max-width: 1024px;
-$content-max-width: 620px;
+$container-max-width: 1140px;
+$content-max-width: 780px;
 
 @import "fonts";
 @import "syntax.scss";
@@ -116,6 +117,7 @@ h3 {
     font-family: $family-serif;
     color: $white !important;
     margin: 1rem auto 2rem auto;
+    max-width: $content-max-width;
   }
   .subtitle {
     text-align: center;
@@ -482,4 +484,40 @@ hr {
     max-width: 175px;
     max-height: 125px;
   }
+}
+
+.content {
+  max-width: $content-max-width;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.has-text-justified p {
+  text-align: justify !important;
+}
+
+.has-text-left p {
+  text-align: left !important;
+}
+
+.has-text-right p {
+  text-align: right !important;
+}
+
+.caption {
+  font-size: .8rem;
+  color: $caption-grey;
+  text-align: left;
+  font-style: normal !important;
+}
+.inline-image {
+  max-width: 42%;
+}
+.float-right {
+  float: right;
+  margin-right: 0 !important;
+}
+.float-left {
+  float: left;
+  margin-left: 0 !important;
 }

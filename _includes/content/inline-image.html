@@ -1,0 +1,6 @@
+<figure class="image inline-image float-{{ include.float | default: 'right' }}">
+  <img alt="{{ include.alt_text }}" src="{{ include.image | absolute_url }}" />
+  {% if include.caption %}
+  <figcaption class="caption">{{ include.caption }}</figcaption>
+  {% endif %}
+</figure>
