@@ -24,7 +24,7 @@
     <nav class="breadcrumb is-centered" aria-label="breadcrumbs">
       <ul>
         {% for crumb in breadcrumbs %}
-          <li><a href="{{ crumb.link | absolute_url }}">{{ crumb.label }}</a></li>
+          <li><a href="{{ crumb.link | liquify | absolute_url }}">{{ crumb.label }}</a></li>
         {% endfor %}
       </ul>
     </nav>
