@@ -1,3 +1,5 @@
+# BUILD SETTINGS
+
 url:            ''
 baseurl:        ''
 permalink:      pretty
@@ -14,65 +16,70 @@ plugins:
   - jekyll-data
   - jekyll-gzip
   - jekyll-redirect-from
+  - jekyll-liquify
 
+# URLS
+root_url:       https://iiif.io
+api_url:        https://iiif.io/api
+guides_url:     https://guides.iiif.io
+
+# THEME VARS
 iiifc-theme:
   logo:       assets/images/logos/logo-sm.png
   acronym:    IIIF
   title:      International Image Interoperability Framework
   tagline:    "International Image Interoperability Framework: A community driven image framework with well defined APIs for making the world’s image repositories interoperable and accessible"
   email:      iiif-discuss@googlegroups.com
-  root_url:   https://iiif.io
-  api_url:    https://iiif.io/api/
   block-start: "<div class='container-block is-max-widescreen'><div class='container' markdown='1'>"
   block-center-start: '<div class="container-block is-max-widescreen"><div class="container has-text-centered" markdown="1">'
   block-end: '</div></div>'
   navbar_menu:
     - label: 'Home'
-      link: '/'
+      link: '{{ site.root_url }}'
     - label: 'Demos'
-      link: '/demos'
+      link: '{{ site.root_url }}/demos'
     - label: 'News & Events'
       link: ''
     - label: 'Get Involved'
-      link: '/get-involved'
+      link: '{{ site.root_url }}/get-involved'
       sub:
         - label: 'Community Groups'
-          link: '/community/groups'
+          link: '{{ site.root_url }}/community/groups'
         - label: 'Consortium'
-          link: '/community/consortium'
+          link: '{{ site.root_url }}/community/consortium'
         - label: 'Join Newsletter'
-          link: '/newsletter'
+          link: '{{ site.root_url }}/newsletter'
         - label: 'Contact Us'
-          link: '/community/consortium/staff/'
+          link: '{{ site.root_url }}/community/consortium/staff/'
     - label: 'Get Started'
-      link: '/get-started'
+      link: '{{ site.root_url }}/get-started'
       sub:
         - label: 'How IIIF Works'
-          link: '/how-iiif-works'
+          link: '{{ site.root_url }}/how-iiif-works'
         - label: 'APIs & Documentation'
-          link: 'https://preview.iiif.io/api/wireframe/api'
+          link: '{{ site.api_url }}'
         - label: 'Cookbooks'
-          link: '/get-started/cookbook'
+          link: '{{ site.root_url }}/get-started/cookbook'
         - label: 'Training'
-          link: '/get-started/training'
+          link: '{{ site.root_url }}/get-started/training'
   footer_menu:
     - heading: About
       sub:
         - label: 'How IIIF Works'
-          link:  '/how-iiif-works'
+          link:  '{{ site.root_url }}/how-iiif-works'
         - label: 'APIs & Documentation'
-          link:  'https://preview.iiif.io/api/wireframe/api'
+          link:  '{{ site.api_url }}'
         - label: 'Demos'
-          link:  '/demos'
+          link:  '{{ site.root_url }}/demos'
         - label: 'Tutorials'
-          link:  'https://guides.iiif.io/'
+          link:  '{{ site.guides_url }}'
     - heading: Stay Connected
       sub:
         - label: 'Events & News'
           link:  ''
         - label: 'Join Newsletter'
-          link:  '/newsletter'
+          link:  '{{ site.root_url }}/newsletter'
         - label: 'Community Groups'
-          link:  '/community/groups'
+          link:  '{{ site.root_url }}/community/groups'
         - label: 'Consortium'
-          link:  '/community/consortium'
+          link:  '{{ site.root_url }}/community/consortium'

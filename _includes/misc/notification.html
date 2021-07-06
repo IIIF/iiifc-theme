@@ -7,7 +7,7 @@
       <p class="title">{{ notification.title }}</p>
       <p class="subtitle">{{ notification.subtitle }}
       {% if notification.link %}
-        <a href="{{ notification.link | absolute_url }}">{{ notification.link_label }}</a>
+        <a href="{{ notification.link | liquify | absolute_url }}">{{ notification.link_label }}</a>
       {% endif %}
       </p>
     </div>

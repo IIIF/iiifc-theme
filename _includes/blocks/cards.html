@@ -11,7 +11,7 @@
         {% if item.link %}
         <footer>
           <p class="has-text-left">
-            <a href="{{ item.link | absolute_url }}">{{ item.link_text | default: 'Learn More' }} ></a>
+            <a href="{{ item.link | liquify | absolute_url }}">{{ item.link_text | default: 'Learn More' }} ></a>
           </p>
         </footer>
         {% endif %}
