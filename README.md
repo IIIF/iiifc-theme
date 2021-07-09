@@ -6,15 +6,15 @@
 - [Use](#Use)
   + [Configuration](#Configuration)
   + [Layouts](#Layouts)
-    - [default.html](#default.html)
-    - [event.html](#event.html)
-    - [page.html](#page.html)
-    - [post.html](#post.html)
-    - [spec.html](#spec.html)
+    - [default.html](#defaulthtml)
+    - [event.html](#eventhtml)
+    - [page.html](#pagehtml)
+    - [post.html](#posthtml)
+    - [spec.html](#spechtml)
   + [Includes](#Includes)
 - [Development](#Development)
   + [Norms](#Norms)
-  + [Steps](#Steps)
+  + [Steps](#Steps-1)
 
 
 ## Installation
