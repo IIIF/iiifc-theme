@@ -2,14 +2,13 @@
 {% assign top_nav = hero.top_nav | default: include.top_nav %}
 {% assign breadcrumbs = include.breadcrumbs | default: page.breadcrumbs | default: layout.breadcrumbs %}
 
-{% if hero.image %}
-  {%- capture style -%}
-  background-image: linear-gradient(to bottom, rgba(0, 25, 39, 0.68), rgba(0, 25, 39, 0.68)), url('{{ hero.image | absolute_url }}');
+
+{%- capture style -%}
+  background-image: linear-gradient(to bottom, rgba(0, 25, 39, 0.68), rgba(0, 25, 39, 0.68)){% if hero.image %}, url('{{ hero.image | absolute_url }}'){% endif %};
   background-size: cover;
   background-position: bottom center;
   background-attachment: fixed;
-  {%- endcapture -%}
-{% endif %}
+{%- endcapture -%}
 
 <section class="hero is-primary" style="{{ style }}">
   {% if top_nav %}
