@@ -5,6 +5,7 @@ $blue: #0073b0;
 $white: #ffffff;
 $dark-blue: #003654;
 $light-blue: rgba(141, 195, 223, 0.08);
+$light-bluer: rgba(141, 195, 223, 0.25);
 $navy: #001927;
 $navy-scrim: rgba(0, 25, 39, 0.8);
 $red: #a40832;
@@ -305,9 +306,10 @@ pre.highlight {
     td {
       border: solid 1px $black;
       border-style: inset;
+      background-color: $white;
     }
     thead {
-      background-color: $light-blue;
+      background-color: $light-bluer;
       color: $dark-blue;
       font-size: 1rem;
       font-family: $family-serif;
