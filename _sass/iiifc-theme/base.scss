@@ -18,7 +18,7 @@ $caption-grey: #5f5f5f;
 
 /* bulma overrides */
 
-$background: $lighter-grey;
+$background: $white;
 $primary: $blue;
 $primary-dark: $navy;
 $text: $black;
@@ -68,6 +68,11 @@ $content-max-width: 780px;
 
 html {
   scroll-behavior: smooth;
+  background-color: $white;
+}
+
+body {
+  background-color: $white;
 }
 
 @mixin heading {
