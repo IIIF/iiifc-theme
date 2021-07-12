@@ -12,15 +12,24 @@ breadcrumbs:
   {% assign content = content | replace: upper, lower %}
 {% endfor %}
 
-<div class="container-block is-max-widescreen">
-  <div class="columns container">
-    <aside class="column is-one-quarter" markdown="1">
-      <div class="box toc-sidebar sticky">
+
+{% if page.toc == false %}
+{{ theme.block-start }}
+  <div class="content api-content">
+    {{ content }}
+  </div>
+{{ theme.block-end }}
+{% else %}
+<div class="container-block no-padding is-max-desktop">
+  <div class="columns is-max-desktop">
+    <aside class="column is-one-third api-sidebar-container" markdown="1">
+      <div class="toc-sidebar sticky">
         {% include api/toc.html html=content h_max=3 id='toc-menu' class='menu' submenu_class='menu-list toc-submenu-%level%' %}
       </div>
     </aside>
-    <div class="column content is-three-quarters api-content" markdown="1">
+    <div class="column is-two-thirds content api-content" markdown="1">
       {% include api/anchor_headings.html html=content anchorBody="#" %}
     </div>
   </div>
 </div>
+{% endif %}
