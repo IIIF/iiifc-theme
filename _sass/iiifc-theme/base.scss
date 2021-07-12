@@ -216,7 +216,7 @@ h3 {
   font-weight: bold;
 
   li {
-    font-size: $size-7;
+    font-size: 1rem;
   }
   a:hover {
     color: $dark-blue;
@@ -296,6 +296,7 @@ pre.highlight {
   padding: 3.5rem;
   max-width: 100% !important;
   margin: unset !important;
+  line-height: 2;
   p,
   li,
   .code-header,
