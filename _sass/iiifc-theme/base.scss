@@ -113,6 +113,7 @@ h3 {
 }
 
 .hero {
+  margin-bottom: .75rem;
   .title {
     font-family: $family-serif;
     color: $white !important;
@@ -231,6 +232,12 @@ pre.highlight {
   border-bottom-right-radius: 1em;
   margin: 0 0 1em 0;
 
+  white-space: pre-wrap;       /* Since CSS 2.1 */
+  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;      /* Opera 4-6 */
+  white-space: -o-pre-wrap;    /* Opera 7 */
+  word-wrap: break-word;       /* Internet Explorer 5.5+ */
+
   code {
     font-family: "Courier Prime", monospace;
   }
@@ -280,14 +287,21 @@ pre.highlight {
 }
 
 .api-content {
+  padding: 3.5rem;
+  max-width: 100% !important;
+  margin: unset !important;
   p,
-  li {
-    max-width: $container-max-width;
+  li,
+  .code-header,
+  .highlight {
+    max-width: $content-max-width;
   }
   table {
-    overflow-y: scroll;
-    display: block;
     border-collapse: collapse;
+    display: block;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+    overflow-x: auto;
     td {
       border: solid 1px $black;
       border-style: inset;
@@ -295,7 +309,7 @@ pre.highlight {
     thead {
       background-color: $light-blue;
       color: $dark-blue;
-      font-size: 1.125rem;
+      font-size: 1rem;
       font-family: $family-serif;
       th {
         border: solid 1px $black;
@@ -520,4 +534,18 @@ hr {
 .float-left {
   float: left;
   margin-left: 0 !important;
+}
+
+.no-padding {
+  padding: 0 !important;
+}
+
+.api-sidebar-container {
+  background-color: $light-blue;
+  padding-left: 3.5rem;
+  padding-right: 0;
+  margin-bottom: 0.75rem;
+  .menu {
+    padding: 3rem 3.5rem 2.5rem 0;
+  }
 }
