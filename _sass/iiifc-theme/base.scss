@@ -216,7 +216,7 @@ h3 {
   font-weight: bold;
 
   li {
-    font-size: $size-7;
+    font-size: 1rem;
   }
   a:hover {
     color: $dark-blue;
@@ -296,6 +296,7 @@ pre.highlight {
   padding: 3.5rem;
   max-width: 100% !important;
   margin: unset !important;
+  line-height: 2;
   p,
   li,
   .code-header,
@@ -329,7 +330,7 @@ pre.highlight {
     }
   }
   .rfc {
-    color: #d55;
+    color: $red;
     font-variant: small-caps;
     font-style: normal;
     font-size: 1.2em;
@@ -555,4 +556,16 @@ hr {
   .menu {
     padding: 3rem 3.5rem 2.5rem 0;
   }
+}
+
+code.language-plaintext {
+  padding: 0.2em 0.15em;
+  font-weight: 400;
+  background-color: $grey;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  font-size: 0.8em;
+  line-height: 2;
+  color: $black;
+  font-family: "Courier Prime", monospace;
 }
