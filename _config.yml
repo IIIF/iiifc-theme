@@ -66,7 +66,7 @@ iiifc-theme:
     - heading: About
       sub:
         - label: 'How IIIF Works'
-          link:  '{{ site.root_url }}//get-started/how-iiif-works'
+          link:  '{{ site.root_url }}/get-started/how-iiif-works'
         - label: 'APIs & Documentation'
           link:  '{{ site.api_url }}'
         - label: 'Demos'
