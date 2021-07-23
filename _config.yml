@@ -56,6 +56,8 @@ iiifc-theme:
       sub:
         - label: 'How IIIF Works'
           link: '{{ site.root_url }}/get-started/how-iiif-works'
+        - label: 'Guides'
+          link: '{{ site.guides_url }}'
         - label: 'APIs & Documentation'
           link: '{{ site.api_url }}'
         - label: 'Cookbooks'
@@ -71,7 +73,7 @@ iiifc-theme:
           link:  '{{ site.api_url }}'
         - label: 'Demos'
           link:  '{{ site.root_url }}/demos'
-        - label: 'Tutorials'
+        - label: 'Tutorials & Guides'
           link:  '{{ site.guides_url }}'
     - heading: Stay Connected
       sub:
