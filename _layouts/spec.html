@@ -16,7 +16,7 @@ breadcrumbs:
 {% if page.toc == false %}
 {{ theme.block-start }}
   <div class="content api-content">
-    {{ content }}
+    {% include api/anchor_headings.html html=content anchorBody="#" %}
   </div>
 {{ theme.block-end }}
 {% else %}
