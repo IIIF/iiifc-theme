@@ -14,15 +14,15 @@ Gem::Specification.new do |spec|
   spec.metadata["plugin_type"] = "theme"
 
   spec.files = `git ls-files -z`.split("\x0").select do |f|
-    f.match(%r!^(assets|_(includes|layouts|sass|data)/|(LICENSE|README)((\.(txt|md|markdown)|$)))!i)
+    f.match(%r!^(assets|lib|_(includes|layouts|sass|data)/|(LICENSE|README)((\.(txt|md|markdown)|$)))!i)
   end
 
-  spec.add_runtime_dependency "jekyll", ">= 4.0", "< 5.0"
+  spec.add_runtime_dependency "html-proofer"
+  spec.add_runtime_dependency "jekyll", ">= 4.0", "< 4.2"
   spec.add_runtime_dependency "jekyll-data"
   spec.add_runtime_dependency "jekyll-gzip"
   spec.add_runtime_dependency "jekyll-redirect-from"
   spec.add_runtime_dependency "jekyll-sitemap"
   spec.add_runtime_dependency "jekyll-liquify"
-
-  spec.add_development_dependency "bundler"
+  spec.add_runtime_dependency "rake"
 end

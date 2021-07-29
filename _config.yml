@@ -28,7 +28,7 @@ iiifc-theme:
   logo:       assets/images/logos/logo-sm.png
   acronym:    IIIF
   title:      International Image Interoperability Framework
-  tagline:    "International Image Interoperability Framework: A community driven image framework with well defined APIs for making the world’s image repositories interoperable and accessible"
+  tagline:    "IIIF is a set of open standards for delivering high-quality, attributed digital objects online at scale. It’s also an international community developing and implementing the IIIF APIs. IIIF is backed by a consortium of leading cultural institutions."
   email:      iiif-discuss@googlegroups.com
   block-start: "<div class='container-block is-max-widescreen'><div class='container' markdown='1'>"
   block-center-start: '<div class="container-block is-max-widescreen"><div class="container has-text-centered" markdown="1">'
@@ -56,6 +56,8 @@ iiifc-theme:
       sub:
         - label: 'How IIIF Works'
           link: '{{ site.root_url }}/get-started/how-iiif-works'
+        - label: 'Guides'
+          link: '{{ site.guides_url }}'
         - label: 'APIs & Documentation'
           link: '{{ site.api_url }}'
         - label: 'Cookbooks'
@@ -66,12 +68,12 @@ iiifc-theme:
     - heading: About
       sub:
         - label: 'How IIIF Works'
-          link:  '{{ site.root_url }}//get-started/how-iiif-works'
+          link:  '{{ site.root_url }}/get-started/how-iiif-works'
         - label: 'APIs & Documentation'
           link:  '{{ site.api_url }}'
         - label: 'Demos'
           link:  '{{ site.root_url }}/demos'
-        - label: 'Tutorials'
+        - label: 'Tutorials & Guides'
           link:  '{{ site.guides_url }}'
     - heading: Stay Connected
       sub:
