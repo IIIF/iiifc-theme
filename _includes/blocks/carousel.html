@@ -1,0 +1,13 @@
+<div class="carousel-container">
+{% for item in include.items %}
+  <div class="carousel-item">
+    <a href="{{ item.link.url }}">
+      <div class="carousel-resource">
+        <img aria-label="{{ item.link.label }}" src="{{ item.resource.url | absolute_url }}">
+      </div>
+    </a>
+    <p class="caption">{{ item.resource.caption }}</p>
+    {% include misc/button.html button_link=item.link.url button_label=item.link.label %}
+  </div>
+{% endfor %}
+</div>
