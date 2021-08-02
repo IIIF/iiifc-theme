@@ -15,7 +15,7 @@
 <div class="container">
   {% for tab in include.tabs %}
   <div id="{{ tab.label | slugify }}" class="content-tab" {% unless forloop.first %}style="display:none;"{% endunless %}>
-    <p>{{ tab.content }}</p>
+    <p>{{ tab.content | liquify }}</p>
   </div>
   {% endfor %}
 </div>

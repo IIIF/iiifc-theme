@@ -1,0 +1,22 @@
+<style>
+  .pullquote-text, .pullquote-attribution {
+    font-family: "Playfair Display";
+    color: #003654; /* $dark-blue */
+  }
+</style>
+
+<div class="pullquote level">
+  <div class="level-item">
+    <i class="fas fa-quote-left is-size-2 is-size-3-tablet quote-icon"></i>
+  </div>
+  <div class="level-item pullquote-body has-text-centered">
+    <p class="pullquote-text is-size-3 is-size-4-tablet is-size-5-mobile">
+      {{ include.quote.text }}
+      <br><br>
+      — <span class="pullquote-attribution">{{ include.quote.attribution }}</span>
+    </p>
+  </div>
+  <div class="level-item">
+    <i class="fas fa-quote-right is-size-2 is-size-3-tablet quote-icon"></i>
+  </div>
+</div>
