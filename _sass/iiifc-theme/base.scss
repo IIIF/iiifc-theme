@@ -1,55 +1,11 @@
 @charset "utf-8";
 
-/* iiif-c vars */
-$blue: #0073b0;
-$white: #ffffff;
-$dark-blue: #003654;
-$light-blue: rgba(141, 195, 223, 0.08);
-$light-bluer: rgba(141, 195, 223, 0.25);
-$navy: #001927;
-$navy-scrim: rgba(0, 25, 39, 0.8);
-$red: #a40832;
-$grey: #edf0f0;
-$lighter-grey: rgba(237, 240, 240, 0.2);
-$black: #171717;
-$greyish-brown: #4a4a4a;
-$shadow: rgba(60, 64, 67, 0.2);
-$caption-grey: #5f5f5f;
-
-/* bulma overrides */
-
-$background: $white;
-$primary: $blue;
-$primary-dark: $navy;
-$text: $black;
-$notification-background-color: $red;
-
-$card-footer-border-top: none;
-
-$tabs-border-bottom-width: 2px;
-
-$box-shadow: 0 1px 2px 1px $shadow;
-$box-radius: 8px;
-
-$size-5: 1.125rem;
-$size-7: 0.875rem;
-
-$navbar-burger-color: $white;
-$navbar-dropdown-arrow: $white;
-$navbar-dropdown-item-active-background-color: $white;
-$navbar-dropdown-background-color: $navy;
-
-$hero-body-padding: 3.5rem 3.5rem 5rem 3.5rem;
-
-$family-sans-serif: "PT Sans", sans-serif;
-$family-serif: "Playfair Display", serif;
-$family-serif-alt: "Source Serif Pro", serif;
-
-$container-max-width: 1140px;
-$content-max-width: 780px;
-
 @import "fonts";
-@import "syntax.scss";
+@import "vars";
+@import "helpers";
+@import "syntax";
+@import "api-spec";
+@import "carousel";
 
 @import "node_modules/bulma/sass/utilities/_all.sass";
 @import "node_modules/bulma/sass/base/_all.sass";
@@ -181,7 +137,7 @@ h3 {
     margin: 0 auto;
     padding: 2.75rem;
   }
-  .container-block:nth-child(odd):not(:only-child) {
+  .container-block:nth-child(even):not(:only-child) {
     background-color: $light-blue;
   }
   .hover-box {
@@ -220,167 +176,21 @@ h3 {
   color: $blue !important;
 }
 
-.toc-sidebar {
-  font-family: $family-serif;
-  font-weight: bold;
-
-  li {
-    font-size: 1rem;
-  }
-  a:hover {
-    color: $dark-blue;
-  }
-  a:active {
-    border-left: $dark-blue;
-  }
-}
-
-.sticky	{
-	position: sticky;
-  top: 1rem;
-}
-
-pre.highlight {
-  background-color: $black;
-  color: $white;
-  border-bottom-left-radius: 1em;
-  border-bottom-right-radius: 1em;
-  margin: 0 0 1em 0;
-
-  white-space: pre-wrap;       /* Since CSS 2.1 */
-  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
-  white-space: -pre-wrap;      /* Opera 4-6 */
-  white-space: -o-pre-wrap;    /* Opera 7 */
-  word-wrap: break-word;       /* Internet Explorer 5.5+ */
-
-  code {
-    font-family: "Courier Prime", monospace;
-  }
-}
-
-
-.code-header {
-  display: flex;
-  justify-content: flex-end;
-  background-color: $black;
-  border-top-left-radius: 1em;
-  border-top-right-radius: 1em;
-}
-
 .button {
   font-family: "Playfair Display", serif;
   font-weight: bold;
 }
 
-.copy-button {
-  display: grid;
-  grid-auto-flow: column;
-  align-items: center;
-  grid-column-gap: 4px;
-  margin: 1em 1em 0 0;
-  cursor: pointer;
-
-  &::before {
-    content: "Copy";
-  }
-
-  &::after {
-    content: "📋";
-    display: block;
-  }
-
-  // This class will be toggled via JavaScript
-  &.copied {
-    &::before {
-      content: "Copied!";
-    }
-
-    &::after {
-      content: "✔️";
-    }
-  }
-}
-
-.api-content {
-  padding: 3.5rem;
-  max-width: 100% !important;
-  margin: unset !important;
-  line-height: 2;
-  p,
-  li,
-  .code-header,
-  .highlight {
-    max-width: $content-max-width;
-  }
-  table {
-    border-collapse: collapse;
-    display: block;
-    max-width: -moz-fit-content;
-    max-width: fit-content;
-    overflow-x: auto;
-    td {
-      border: solid 1px $black;
-      border-style: inset;
-      background-color: $white;
-    }
-    thead {
-      background-color: $light-bluer;
-      color: $dark-blue;
-      font-size: 1rem;
-      font-family: $family-serif;
-      th {
-        border: solid 1px $black;
-        border-style: inset;
-      }
-    }
-    tbody tr:last-child td,
-    .content table tbody tr:last-child th {
-      border-bottom-width: 1px;
-    }
-  }
-  .rfc {
-    color: $red;
-    font-variant: small-caps;
-    font-style: normal;
-    font-size: 1.2em;
-    line-height: 0.8333;
-  }
-  .warning {
-    border-left: 4px solid #E05252;
-    background: #fbe9e9;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 20px;
-    padding-right: 24px;
-  }
-
-  .alert {
-    border-left: 4px solid #E0CB52;
-    background: #FCFAEE;
-    padding-top: 5px;
-    padding-bottom: 20px;
-    padding-left: 20px;
-    padding-right: 24px;
-  }
-}
-
-#toc-menu {
-  .menu-list {
-    font-family: $family-sans-serif;
-    a {
-      color: $greyish-brown;
-    }
-  }
-}
-
 .breadcrumb {
   font-family: $family-serif;
   font-weight: bold;
-}
-
-.sticky {
-  max-height: 95vh;
-  overflow-x: scroll;
+  a {
+    border-bottom: 2px solid transparent;
+    padding: 0;
+    &:hover {
+      border-bottom: 2px solid $white;
+    }
+  }
 }
 
 .same-height-column {
@@ -467,9 +277,6 @@ p {
   }
 }
 
-.margin-unset {
-  margin-left: unset !important;
-}
 
 .iiif-notification {
   background-color: $red;
@@ -546,46 +353,4 @@ hr {
 }
 .inline-image {
   max-width: 42%;
-}
-.float-right {
-  float: right;
-  margin-right: 0 !important;
-}
-.float-left {
-  float: left;
-  margin-left: 0 !important;
-}
-
-.no-padding {
-  padding: 0 !important;
-}
-
-.api-sidebar-container {
-  background-color: $light-blue;
-  padding-left: 3.5rem;
-  padding-right: 0;
-  margin-bottom: 0.75rem;
-  .menu {
-    padding: 3rem 3.5rem 2.5rem 0;
-  }
-}
-
-code.language-plaintext {
-  padding: 0.2em 0.15em;
-  font-weight: 400;
-  background-color: $grey;
-  border: 1px solid #dddddd;
-  border-radius: 4px;
-  font-size: 0.8em;
-  line-height: 2;
-  color: $black;
-  font-family: "Courier Prime", monospace;
-}
-
-.breadcrumb a {
-  border-bottom: 2px solid transparent;
-  padding: 0;
-  &:hover {
-    border-bottom: 2px solid $white;
-  }
 }
