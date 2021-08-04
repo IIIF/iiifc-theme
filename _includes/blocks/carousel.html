@@ -1,7 +1,7 @@
 <div class="carousel-container">
 {% for item in include.items %}
   <div class="carousel-item">
-    <a href="{{ item.link.url }}">
+    <a href="{{ item.link.url | absolute_url}}">
       <div class="carousel-resource">
         <img alt="{{ item.resource.alt_text }}" src="{{ item.resource.url | absolute_url }}">
       </div>
