@@ -1,7 +1,8 @@
 <div class="columns logo-grid is-multiline is-vcentered">
-  {% for item in include.items %}
+  
+  {% for item in logos %}
   <div class="column is-one-quarter">
-    <a href="{{ item.link | absolute_url }}">
+    <a href="{{ item.uri | absolute_url }}">
       {% if item.logo %}
       <img class="p-3 inline-logo" alt="{{ item.name }} logo" src="{{ item.logo | absolute_url }}" />
       {% else %}

@@ -2,61 +2,28 @@
 
 @import "fonts";
 @import "vars";
-@import "helpers";
-@import "syntax";
+@import "bulma-base";
+
 @import "api-spec";
 @import "carousel";
+@import "helpers";
+@import "syntax";
+@import "typography";
 
-@import "node_modules/bulma/sass/utilities/_all.sass";
-@import "node_modules/bulma/sass/base/_all.sass";
-@import "node_modules/bulma/sass/components/_all.sass";
-@import "node_modules/bulma/sass/grid/_all.sass";
-@import "node_modules/bulma/sass/helpers/_all.sass";
-@import "node_modules/bulma/sass/layout/_all.sass";
-
-@import "node_modules/bulma/sass/elements/box.sass";
-@import "node_modules/bulma/sass/elements/button.sass";
-@import "node_modules/bulma/sass/elements/container.sass";
-@import "node_modules/bulma/sass/elements/content.sass";
-@import "node_modules/bulma/sass/elements/other.sass";
-@import "node_modules/bulma/sass/elements/notification.sass";
-@import "node_modules/bulma/sass/elements/title.sass";
-
-html {
+html, body {
   scroll-behavior: smooth;
   background-color: $white;
 }
 
-body {
-  background-color: $white;
+.container {
+  width: 100%;
+  margin: 0px auto;
 }
 
-@mixin heading {
-  font-family: $family-serif;
-  color: $dark-blue;
-  font-weight: bolder;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-  @include heading;
-}
-
-p {
+.content {
   max-width: $content-max-width;
-}
-
-h1 { font-size: 2.375rem; }
-h2 {
-  font-size: 1.75rem;
-  margin-bottom: 1.75rem;
-}
-h3 {
-  font-size: 1.25rem;
-  margin-bottom: 1.25rem;
+  margin: 0 auto;
+  text-align: left;
 }
 
 .brand-title {
@@ -124,11 +91,6 @@ h3 {
   }
 }
 
-.container {
-  width: 100%;
-  margin: 0px auto;
-}
-
 #main {
   font-family: $family-sans-serif;
   min-height: 50vh;
@@ -149,13 +111,6 @@ h3 {
   }
 }
 
-.has-text-centered {
-  p {
-    text-align: center;
-    margin: .5em auto 2em auto;
-  }
-}
-
 #footer {
   background-color: $grey;
   color: $black;
@@ -170,10 +125,6 @@ h3 {
       font-weight: bold;
     }
   }
-}
-
-.blue-text {
-  color: $blue !important;
 }
 
 .button {
@@ -238,14 +189,12 @@ h3 {
   width: auto;
 }
 
-p {
-  .inline-icon {
-    display: inline;
-    margin: 0 0.125em;
-    padding: 0;
-    vertical-align: baseline;
-    height: 0.75em;
-  }
+p.inline-icon {
+  display: inline;
+  margin: 0 0.125em;
+  padding: 0;
+  vertical-align: baseline;
+  height: 0.75em;
 }
 
 .event-card {
@@ -325,24 +274,6 @@ hr {
     max-width: 175px;
     max-height: 125px;
   }
-}
-
-.content {
-  max-width: $content-max-width;
-  margin: 0 auto;
-  text-align: left;
-}
-
-.has-text-justified p {
-  text-align: justify !important;
-}
-
-.has-text-left p {
-  text-align: left !important;
-}
-
-.has-text-right p {
-  text-align: right !important;
 }
 
 .caption {
