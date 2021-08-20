@@ -49,8 +49,8 @@ iiifc-theme:
           link: '{{ site.root_url }}/community/consortium'
         - label: 'Join Newsletter'
           link: '{{ site.root_url }}/newsletter'
-        - label: 'Contact Us'
-          link: '{{ site.root_url }}/community/consortium/staff/'
+        - label: 'Code of Conduct'
+          link: '{{ site.root_url }}/event/conduct/'
     - label: 'Get Started'
       link: '{{ site.root_url }}/get-started'
       sub:
@@ -75,6 +75,8 @@ iiifc-theme:
           link:  '{{ site.root_url }}/demos'
         - label: 'Tutorials & Guides'
           link:  '{{ site.guides_url }}'
+        - label: 'Privacy policy'
+          link:  '{{ site.root_url }}/privacy'
     - heading: Stay Connected
       sub:
         - label: 'Events & News'
@@ -85,3 +87,5 @@ iiifc-theme:
           link:  '{{ site.root_url }}/community/groups'
         - label: 'Consortium'
           link:  '{{ site.root_url }}/community/consortium'
+        - label: 'Contact Us'
+          link:  '{{ site.root_url }}/community/consortium/staff'
