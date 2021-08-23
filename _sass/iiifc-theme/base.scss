@@ -42,7 +42,7 @@ html, body {
 }
 
 .hero {
-  margin-bottom: .75rem;
+  // margin-bottom: .75rem;
   .title {
     font-family: $family-serif;
     color: $white !important;
@@ -57,7 +57,10 @@ html, body {
   .hero-meta {
     font-family: $family-serif;
     font-size: 1rem !important;
-    margin: 2.5rem auto -2.5rem;
+    // margin: 2.5rem auto;
+  }
+  .hero-body {
+    padding: 3.5rem;
   }
 }
 
