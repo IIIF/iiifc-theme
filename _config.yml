@@ -39,7 +39,7 @@ iiifc-theme:
     - label: 'Demos'
       link: '{{ site.root_url }}/demos'
     - label: 'News & Events'
-      link: ''
+      link: '{{ site.root_url }}/news-and-events'
     - label: 'Get Involved'
       link: '{{ site.root_url }}/get-involved'
       sub:
@@ -79,8 +79,8 @@ iiifc-theme:
           link:  '{{ site.root_url }}/privacy'
     - heading: Stay Connected
       sub:
-        - label: 'Events & News'
-          link:  ''
+        - label: 'News & Events'
+          link:  '{{ site.root_url }}/news-and-events'
         - label: 'Join Newsletter'
           link:  '{{ site.root_url }}/newsletter'
         - label: 'Community Groups'
