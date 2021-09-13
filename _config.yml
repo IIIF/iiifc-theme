@@ -43,8 +43,8 @@ iiifc-theme:
     - label: 'Get Involved'
       link: '{{ site.root_url }}/get-involved'
       sub:
-        - label: 'Community Groups'
-          link: '{{ site.root_url }}/community/groups'
+        - label: 'Community'
+          link: '{{ site.root_url }}/community/'
         - label: 'Consortium'
           link: '{{ site.root_url }}/community/consortium'
         - label: 'Join Newsletter'
