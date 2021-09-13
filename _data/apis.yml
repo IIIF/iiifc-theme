@@ -29,8 +29,8 @@ auth:
     minor: 0
     patch: 0
 search:
-  label: Search API
-  description: Access high-quality images, examine them closely, and share your work with collaborators to aid research and presentation.
+  label: Content Search API
+  description: Perform search for text within or annotations related to digital objects. 
   image: assets/images/icons/search-group@2x.webp
   alt_text: Search API icon
   latest:
