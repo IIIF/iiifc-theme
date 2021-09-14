@@ -1,0 +1,14 @@
+<div class="columns is-variable is-4">
+  <div class="column is-half">
+    {{ include.content_1 | markdownify }}
+    {% if include.button_label_1 %}
+    {% include misc/button.html button_label=include.button_label_1 button_link=include.button_link_1 %}
+    {% endif %}
+  </div>
+  <div class="column">
+    {{ include.content_2 | markdownify }}
+    {% if include.button_label_2 %}
+    {% include misc/button.html button_label=include.button_label_2 button_link=include.button_link_2 %}
+    {% endif %}
+  </div>
+</div>
