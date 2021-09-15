@@ -1,15 +1,19 @@
 <div class="block columns is-multiline">
   {% assign items = site.news | sort: 'date' | reverse  %}
   {% for news in items | limit: include.limit %}
-  <div class="column is-one-third same-height-column">
-    <div class="event-card card box hover-box columns is-gapless is-mobile">
-      <div class="event-info card-content">
-        <h3 class="event-title is-size-5 has-text-left"><a href="{{ news.url | absolute_url }}">{{ news.title }}</a></h3>
-        <p class="event-details has-text-left" style="margin-bottom:0">
+  <div class="column is-full">
+    <div class="news-card card box hover-box columns is-gapless is-mobile">
+      <div class="news-info card-content">
+        <h3 class="news-title has-text-left"><a href="{{ news.url | absolute_url }}">{{ news.title }}</a></h3>
+        <p class="news-details has-text-left sans-serif" style="margin-bottom:0">
           <i class="far fa-calendar-alt"></i>&nbsp;
-          <time datetime="{{ news.date | date: '%Y-%m-%d' }}">{{ news.date | date: "%B %e, %Y" }}</time>
-          <br>
-          <i class="far fa-user-circle"></i>&nbsp;{{ news.author }}
+          <time datetime="{{ news.date | date: '%Y-%m-%d' }}">{{ news.date | date: "%B %e, %Y" }}</time>&nbsp;&nbsp;|&nbsp;&nbsp;<i class="far fa-user-circle"></i>&nbsp;{{ news.author }}
+        </p>
+        <p class="excerpt has-text-left">
+          {{ news.content | strip_html | truncatewords: 40 }}
+        </p>
+        <p class="has-text-left margin-unset">
+          <b><a class="serif" href="{{ news.url | absolute_url }}">Read More ></a></b>
         </p>
       </div>
     </div>
