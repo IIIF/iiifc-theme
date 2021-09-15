@@ -1,10 +1,8 @@
-<script src="{{ 'assets/js/tabSwitch.js' | absolute_url }}"></script>
-
 <nav class="tabs is-fullwidth">
   <div class="container">
     <ul>
       {% for tab in include.tabs %}
-      <li class="tab {% if forloop.first %}is-active{% endif %}" onclick="openTab(event,'{{ tab.label | slugify }}')">
+      <li class="tab" id="{{ tab.label | slugify }}-heading" onclick="openTab('{{ tab.label | slugify }}')">
         <h3><a>{{ tab.label }}</a></h3>
       </li>
       {% endfor %}
@@ -19,3 +17,5 @@
   </div>
   {% endfor %}
 </div>
+
+<script src="{{ 'assets/js/tabSwitch.js' | absolute_url }}"></script>
