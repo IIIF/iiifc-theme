@@ -11,7 +11,7 @@ namespace :build do
 
   desc 'Clean and build with branch live URL overrides'
   task :live do
-    baseurl = "/#{LIVE_PATH}"
+    baseurl = "#{LIVE_PATH}"
     dest    = SITE_DIR + baseurl
 
     build dest=dest, baseurl=baseurl
