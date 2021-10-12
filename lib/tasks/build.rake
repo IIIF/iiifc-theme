@@ -9,6 +9,14 @@ namespace :build do
     sh cmd
   end
 
+  desc 'Clean and build with branch live URL overrides'
+  task :live do
+    baseurl = "/#{LIVE_PATH}"
+    dest    = SITE_DIR + baseurl
+
+    build dest=dest, baseurl=baseurl
+  end
+
   desc 'Clean and build with branch preview URL overrides'
   task :preview do
     branch = `git rev-parse --abbrev-ref HEAD`.strip
