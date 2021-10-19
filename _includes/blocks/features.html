@@ -1,6 +1,7 @@
 <div class="block columns">
   {% for item in include.items %}
     <div class="column">
+      {% include misc/image.html url=item.image alt=item.alt_text %}
       <img class="lg-icon" src="{{ item.image | absolute_url }}" alt="{{ item.alt_text }} "/>
       <h3>{{ item.label }}</h3>
       <p>{{ item.description }}</p>
