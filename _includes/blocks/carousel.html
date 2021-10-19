@@ -3,7 +3,8 @@
   <div class="carousel-item">
     <a href="{{ item.link.url | absolute_url}}">
       <div class="carousel-resource">
-        <img alt="{{ item.resource.alt_text }}" src="{{ item.resource.url | absolute_url }}">
+        {% include misc/image.html url=item.resource.url alt=item.resource.alt_text %}
+        <!--<img alt="{{ item.resource.alt_text }}" src="{{ item.resource.url | absolute_url }}">-->
       </div>
     </a>
     <p class="caption">{{ item.resource.caption }}</p>
