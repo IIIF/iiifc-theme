@@ -1,0 +1,7 @@
+
+{% assign webp_filename = include.url | absolute_url | replace: ".jpg", ".webp" | replace: ".jpeg", ".webp" | replace: ".png", ".webp" | replace: ".tiff", ".webp" %}
+
+<picture>
+  <source srcset="{{ webp_filename }}" type="image/webp">
+  <img src="{{ include.url | absolute_url }}" alt="{{ include.alt }}" class="{{ include.class }}">
+</picture>
