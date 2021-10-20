@@ -1,0 +1,36 @@
+- name: 2021 IIIF Annual Conference
+  start_date: 2021-06-22
+  end_date: 2021-06-24
+  location: Online
+  url: /event/2021/annual_conference/
+  description: A Virtual online conference showcasing the latest IIIF developments
+- name: 2020 IIIF Working Meeting
+  start_date: 2020-12-01
+  end_date: 2020-12-04
+  location: Online
+  url: /event/2020/fall_working_meeting/
+  description: A series of free online events and working sessions held with the goal of collaboratively advancing the IIIF standards and community.
+- name: IIIF Week
+  start_date: 2020-06-01
+  end_date: 2020-06-05
+  location: Online
+  url: /event/2020/iiifweek/
+  description: The first online IIIF conference
+- name: Spring 2020 IIIF Conference
+  start_date: 2020-06-01
+  end_date: 2020-06-05
+  location: Boston, MA, USA
+  url: /event/2020/boston/
+  description: Postponed due to COVID-19 pandemic
+- name: Fall 2019 IIIF Working Meeting
+  start_date: 2019-11-01
+  end_date: 2019-11-05
+  location: Ann Arbor, Michigan, USA
+  url: /event/2019/ann_arbor/
+  description: Showcase and working group meeting in Ann Arbor hosted jointly by the The University of Michigan Library and ITHAKA
+- name: Spring 2019 IIIF Conference 
+  start_date: 2019-05-24
+  end_date: 2019-05-28
+  location: Göttingen, Germany
+  url: /event/2019/goettingen/
+  description: The 2019 International Image Interoperability Framework (IIIF) Conference hosted by the University of Göttingen / Göttingen State and University Library
