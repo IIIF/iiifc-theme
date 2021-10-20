@@ -6,7 +6,7 @@
     <div class="column is-one-third same-height-column">
       <div class="box hover-box iiif-card">
         {% if api.image %}
-          {% include misc/image.html url=item[1].image alt=item[1].alt_text class="iiif-icon" %}
+          {% include misc/image.html url=api.image alt=api.alt_text class="iiif-icon" %}
         {% endif %}
 
         <h3 class="title">{{ api.label }}</h3>
