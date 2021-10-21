@@ -10,7 +10,17 @@
           <time datetime="{{ news.date | date: '%Y-%m-%d' }}">{{ news.date | date: "%B %e, %Y" }}</time>&nbsp;&nbsp;|&nbsp;&nbsp;<i class="far fa-user-circle"></i>&nbsp;{{ news.author }}
         </p>
         <p class="excerpt has-text-left">
+          
+          {% if news.excerpt %}
+          {{ news.excerpt | strip_html }}
+          
+          {% else %}
+          <br>
+          <br>
+
           {{ news.content | strip_html | truncatewords: 40 }}
+          {% endif %}
+
         </p>
         <p class="has-text-left margin-unset">
           <b><a class="serif" href="{{ news.url | absolute_url }}">Read More ></a></b>
