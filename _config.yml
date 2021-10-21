@@ -35,7 +35,7 @@ iiifc-theme:
   block-end: '</div></div>'
   navbar_menu:
     - label: 'Home'
-      link: '{{ site.root_url }}'
+      link: '{{ site.root_url }}/'
     - label: 'Demos'
       link: '{{ site.root_url }}/demos'
     - label: 'News & Events'
