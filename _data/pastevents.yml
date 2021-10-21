@@ -106,26 +106,26 @@
   location: London, England, UK
   url: /event/2014/london/
   description: Hosted by the British Library
-- name: Winter 2014: Copenhagen, Denmark
+- name: Winter 2014 Copenhagen, Denmark
   start_date: 2014-02-18
   end_date: 2014-02-21
   location: Copenhagen, Denmark
   description: Hosted by the Royal Danish Library
-- name: Summer 2013: Paris, France
+- name: Summer 2013 Paris, France
   start_date: 2013-05-15
   end_date: 2013-05-27
   location: Paris, France
-- name: Summer 2012: Edinburgh, Scotland
+- name: Summer 2012 Edinburgh, Scotland
   start_date: 2012-07-14
   end_date: 2012-07-16
   location: Edinburgh, Scotland, UK
   description: Hosted by the National Library of Scotland
-- name: Spring 2012: The Hague, Netherlands
+- name: Spring 2012 The Hague, Netherlands
   start_date: 2012-04-11
   end_date: 2012-04-13
   location: The Hague, Netherlands
   description: Hosted by the Koninklijke Bibliotheek
-- name: Fall 2011: Cambridge, England
+- name: Fall 2011 Cambridge, England
   start_date: 2011-09-03
   end_date: 2011-09-06
   location: Cambridge, England, UK
