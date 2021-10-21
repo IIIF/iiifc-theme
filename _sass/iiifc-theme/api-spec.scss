@@ -163,3 +163,13 @@ pre.highlight {
   border-top-left-radius: 1em;
   border-top-right-radius: 1em;
 }
+
+.anchorClass {
+  content: url("../../assets/images/icons/link.png");
+  width: 0.98em;
+  display: none;
+}
+
+h2:hover .anchorClass, h3:hover .anchorClass {
+  display: inline-block;
+}

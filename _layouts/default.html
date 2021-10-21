@@ -8,7 +8,7 @@
     {%- include blocks/hero.html hero=page.hero top_nav=true -%}
     <section id="main">
       {% if page.anchor_headings %}
-      {% include api/anchor_headings.html html=content anchorBody="#" %}
+      {% include api/anchor_headings.html html=content anchorClass="anchorClass"  %}
       {% else %}
       {{ content }}
       {% endif %}

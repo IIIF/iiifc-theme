@@ -16,7 +16,7 @@ breadcrumbs:
 {% if page.toc == false %}
 {{ theme.block-start }}
   <div class="content api-content">
-    {% include api/anchor_headings.html html=content anchorBody="#" %}
+    {% include api/anchor_headings.html html=content anchorClass="anchorClass" %}
   </div>
 {{ theme.block-end }}
 {% else %}
@@ -28,7 +28,7 @@ breadcrumbs:
       </div>
     </aside>
     <div class="column is-three-quarters content api-content" markdown="1">
-      {% include api/anchor_headings.html html=content anchorBody="#" %}
+      {% include api/anchor_headings.html html=content anchorClass="anchorClass" %}
     </div>
   </div>
 </div>
