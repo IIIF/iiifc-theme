@@ -1,9 +1,10 @@
 require 'iiifc'
 
 namespace :build do
-  def build(dest=nil, baseurl=nil)
+  def build(dest=nil, baseurl=nil, buildType=nil)
     sh "bundle exec jekyll clean"
     cmd = "bundle exec jekyll build"
+    cmd += " JEKYLL_ENV=#{buildType} " unless buildType.nil?
     cmd += " -d '#{dest}'" unless dest.nil?
     cmd += " --baseurl '#{baseurl}'" unless baseurl.nil?
     sh cmd
@@ -13,8 +14,9 @@ namespace :build do
   task :live do
     baseurl = "#{LIVE_PATH}"
     dest    = SITE_DIR + baseurl
+    buildType = "production"
 
-    build dest=dest, baseurl=baseurl
+    build dest=dest, baseurl=baseurl, buildType=buildType
   end
 
   desc 'Clean and build with branch preview URL overrides'
