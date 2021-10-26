@@ -5,6 +5,7 @@ baseurl:        ''
 permalink:      pretty
 theme:          iiifc-theme
 source:         source
+google_analytics:   UA-7219229-22
 
 markdown:       kramdown
 exclude:        [node_modules]
