@@ -6,6 +6,9 @@
   .menu {
     padding: 3rem 3.5rem 2.5rem 0;
   }
+  a {
+  color: $dark-blue;
+  }
 }
 
 #toc-menu {
@@ -25,10 +28,10 @@
     font-size: 1.15rem;
   }
   a:hover {
-    color: $dark-blue;
+    color: $blue;
   }
   a:active {
-    border-left: $dark-blue;
+    border-left: $blue;
   }
   .toc-submenu-2{
     font-weight: normal;
