@@ -22,7 +22,7 @@
   font-weight: bold;
 
   li {
-    font-size: 1rem;
+    font-size: 1.15rem;
   }
   a:hover {
     color: $dark-blue;
@@ -68,6 +68,9 @@
   padding: 3.5rem;
   max-width: 100% !important;
   margin: unset !important;
+  p {
+    font-size: 1.1rem;
+  }
   p,
   li,
   .code-header,
@@ -153,6 +156,7 @@ pre.highlight {
 
   code {
     font-family: "Courier Prime", monospace;
+    font-size: 1rem;
   }
 }
 
