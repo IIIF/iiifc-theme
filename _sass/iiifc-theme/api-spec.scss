@@ -71,14 +71,12 @@
   padding: 3.5rem;
   max-width: 100% !important;
   margin: unset !important;
-  p {
-    font-size: 1.1rem;
-  }
   p,
   li,
   .code-header,
   .highlight {
     max-width: $content-max-width;
+    font-size: 1.1rem;
   }
   table {
     border-collapse: collapse;
