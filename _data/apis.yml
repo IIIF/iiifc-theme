@@ -24,7 +24,7 @@ auth:
   image: assets/images/icons/auth-group@2x.png
   alt_text: Authentication API icon
   latest:
-    label: Stable 3.0
+    label: Stable 1.0
     major: 1
     minor: 0
     patch: 0
