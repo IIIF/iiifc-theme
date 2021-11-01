@@ -1,4 +1,10 @@
 <div class="container mgt-medium mgb-medium">
+  {% if include.image_link %}
+  <a href="{{ include.image_link | absolute_url }}">
+    {% endif %}
   <img alt="{{ include.alt_text }}" src="{{ include.image | absolute_url }}" />
+   {% if include.image_link %}
+  </a>
+  {% endif %}
   <span class="caption">{{ include.caption }}</span>
 </div>
