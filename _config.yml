@@ -22,7 +22,9 @@ plugins:
 # URLS
 root_url:       https://iiif.io
 api_url:        https://iiif.io/api
-guides_url:     https://guides.iiif.io
+cookbook_url:   https://iiif.io/api/cookbook
+guides_url:     https://iiif.io/guides
+training_url:   https://training.iiif.io
 
 # THEME VARS
 iiifc-theme:
