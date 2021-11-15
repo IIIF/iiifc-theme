@@ -1,3 +1,3 @@
 {% for editor in include.editors %}
-  - **[{{ editor.name }}]({{ editor.orchid }})**, {{ editor.institution }}
+  - **[{{ editor.name }}]({{ editor.ORCID }})**, {{ editor.institution }}
 {% endfor %}
