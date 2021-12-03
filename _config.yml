@@ -91,4 +91,4 @@ iiifc-theme:
         - label: 'Consortium'
           link:  '{{ site.root_url }}/community/consortium'
         - label: 'Contact Us'
-          link:  '{{ site.root_url }}/community/consortium/staff'
+          link:  '{{ site.root_url }}/contact'
