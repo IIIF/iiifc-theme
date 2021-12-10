@@ -34,7 +34,7 @@ auth:
 search:
   label: Content Search API
   description: Perform search for text within or annotations related to digital objects. 
-  tech_description: The Content Search API specification lays out the interoperability mechanism for performing searches of text annotations associated with an object within the IIIF context.
+  tech_description: The IIIF Content Search API specification lays out the interoperability mechanism for performing searches of text annotations associated with an object within the IIIF context.
   image: assets/images/icons/search-group@2x.png
   alt_text: Search API icon
   latest:
@@ -56,7 +56,7 @@ discovery:
 content-state:
   label: Content State API
   description: Generate a very specific link to a particular view of an object, like a specific area on a particulat page rotated at a certain angle.
-  tech_description: This specification provides a way to refer to a IIIF Presentation API resource, or a part of a resource, in a compact format that can be used to initialize the view of that resource in any client.
+  tech_description: The IIIF Content State API provides a way to refer to a IIIF Presentation API resource, or a part of a resource, in a compact format that can be used to initialize the view of that resource in any client.
   image: assets/images/icons/link-group@2x.png
   alt_text: Content State API icon
   latest:
