@@ -1,6 +1,7 @@
 image:
   label: Image API
   description: Retrieves images from anywhere in the world and allows the user to select an area of the image and to resize, rotate, and edit the quality.
+  tech_description: The IIIF Image API specifies a web service that returns an image in response to a standard HTTP(S) request. The URI can specify the region, size, rotation, quality characteristics and format of the requested image.
   image: assets/images/icons/image@2x.png
   alt_text: Image API icon
   latest:
@@ -11,6 +12,7 @@ image:
 presentation:
   label: Presentation API
   description: Packages each image with its metadata so users know the origin, title of the image, and even what page of a book the image was from.
+  tech_description: The IIIF Presentation API provides the information necessary to allow a rich, online viewing environment for compound digital objects to be presented to a human user, often in conjunction with the IIIF Image API. 
   image: assets/images/icons/location-info@2x.png
   alt_text: Presentation API icon
   latest:
@@ -21,6 +23,7 @@ presentation:
 auth:
   label: Authentication API
   description: Control and restrict access by creating a link to a user interface for logging in and services that provide credentials.
+  tech_description: IIIF Authentication specification describes a set of workflows for guiding the user through an existing access control system.
   image: assets/images/icons/auth-group@2x.png
   alt_text: Authentication API icon
   latest:
@@ -31,6 +34,7 @@ auth:
 search:
   label: Content Search API
   description: Perform search for text within or annotations related to digital objects. 
+  tech_description: The Content Search API specification lays out the interoperability mechanism for performing searches of text annotations associated with an object within the IIIF context.
   image: assets/images/icons/search-group@2x.png
   alt_text: Search API icon
   latest:
@@ -41,6 +45,7 @@ search:
 discovery:
   label: Change Discovery API
   description: Harvest any changes published by organizations that deliver digital objects.
+  tech_description: the IIIF Change Discovery API provides the information needed to discover and make use of IIIF resources.
   image: assets/images/icons/shape@2x.png
   alt_text: Change Discovery API icon
   latest:
@@ -51,6 +56,7 @@ discovery:
 content-state:
   label: Content State API
   description: Generate a very specific link to a particular view of an object, like a specific area on a particulat page rotated at a certain angle.
+  tech_description: This specification provides a way to refer to a IIIF Presentation API resource, or a part of a resource, in a compact format that can be used to initialize the view of that resource in any client.
   image: assets/images/icons/link-group@2x.png
   alt_text: Content State API icon
   latest:
