@@ -6,8 +6,23 @@
   /* customize formbutton below*/     
   formbutton("create", {
     action: "https://formspree.io/f/xbjwjlbn",
-    title: "Website Feedback",
+    title: "Feedback",
     fields: [
+      {
+        type: "radio",
+        name: "feedback_type",
+        value: "Comment"
+      },
+      {
+        type: "radio",
+        name: "feedback_type",
+        value: "Correction"
+      },
+      {
+        type: "radio",
+        name: "feedback_type",
+        value: "Bug"
+      },
       { 
         type: "email", 
         label: "Email:", 
@@ -19,7 +34,7 @@
         type: "textarea",
         label: "Message:",
         name: "message",
-        placeholder: "What's on your mind?",
+        placeholder: "We want to hear from you! Enter your feedback here.",
       },
       { type: "submit" }      
     ],
