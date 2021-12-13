@@ -12,19 +12,31 @@
         type: "radio",
         name: "feedback_type",
         value: "Comment",
-        label: "Comment"
+        label: "Comment",
+        style: {
+            display: "inline-block";
+            padding-right: "10px";
+        }
       },
       {
         type: "radio",
         name: "feedback_type",
         value: "Correction",
-        label: "Correction"
+        label: "Correction",
+        style: {
+            display: "inline-block";
+            padding-right: "10px";
+        }
       },
       {
         type: "radio",
         name: "feedback_type",
         value: "Bug",
-        label: "Bug"
+        label: "Bug",
+        style: {
+            display: "inline-block";
+            padding-right: "10px";
+        }
       },
       { 
         type: "email", 
@@ -39,7 +51,10 @@
         name: "message",
         placeholder: "We want to hear from you! Enter your feedback here.",
       },
-      { type: "submit" }      
+      { 
+        type: "submit",
+        label: "Send feedback"
+      }      
     ],
     styles: {
       title: {
