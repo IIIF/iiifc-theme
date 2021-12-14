@@ -1,5 +1,4 @@
 <!-- Read the Formbutton docs at formspree.io/formbutton/docs. See more examples at codepen.io/formspree -->
-// load cloudflare icons
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
 
 <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
@@ -45,7 +44,7 @@
         type: "email", 
         label: "Email: (Optional)", 
         name: "email",
-        required: false,
+        required: true,
         placeholder: "your@email.com"
       },
       {
@@ -58,6 +57,7 @@
         name: "Send feedback",
         type: "submit",
         label: "Send feedback"
+        value: "Send feedback"
       }      
     ],
     buttonImg: "<i class='fas fa-comment' style='font-size:24px'/>", 
