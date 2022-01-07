@@ -18,5 +18,15 @@
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://kit.fontawesome.com/2c3e99340f.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="{{ 'assets/js/carouselInit.js' | absolute_url }}"></script>
+
+    {% if page.feedback %}
+        {% if page.feedback == "none" %}
+            <!-- No feedback included-->
+        {% else %}
+            {% include {{ page.feedback }} %}
+        {% endif %}
+    {% else %}
+        {% include misc/feedback.html %}
+    {% endif %}
   </body>
 </html>
