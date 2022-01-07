@@ -60,7 +60,7 @@
       {
         type: "hidden",
         name: "URL",
-        value: window.location.pathname,
+        value: window.location.pathname.replaceAll('/','|'),
         style: {
             display: "none"
         }
