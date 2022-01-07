@@ -43,20 +43,28 @@
       { 
         type: "email", 
         label: "Email:", 
-        name: "email",
+        name: "Email",
         required: true,
         placeholder: "your@email.com"
       },
       {
         type: "textarea",
         label: "Message:",
-        name: "message",
+        name: "Message",
         placeholder: "We want to hear from you! Enter your feedback here.",
       },
       { 
         type: "submit",
         value: "Submit"
-      }      
+      },
+      {
+        type: "hidden",
+        name: "Page",
+        value: window.location.pathname.replaceAll('/','|'),
+        style: {
+            display: "none"
+        }
+      }
     ],
     buttonImg: "<i class='fas fa-comment' style='font-size:24px'/>", 
     styles: {
