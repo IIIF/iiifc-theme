@@ -54,14 +54,16 @@
         placeholder: "We want to hear from you! Enter your feedback here.",
       },
       { 
-        label: "",
         type: "submit",
         value: "Submit"
       },
       {
         type: "hidden",
         name: "URL",
-        value: window.location.href
+        value: window.location.href,
+        style: {
+            display: "none"
+        }
       }
     ],
     buttonImg: "<i class='fas fa-comment' style='font-size:24px'/>", 
