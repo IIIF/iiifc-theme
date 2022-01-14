@@ -238,6 +238,7 @@ p.inline-icon {
   margin-bottom: 0 !important;
   border-radius: 0;
 
+
   .delete {
     float:right;
   }
@@ -245,6 +246,8 @@ p.inline-icon {
   .message-header {
     background-color: $red;
     padding: 1.5rem 0;
+    max-width: 780px;
+    margin: 0 auto;
 
     .title {
       color: $white;
