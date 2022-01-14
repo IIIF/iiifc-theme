@@ -7,6 +7,9 @@
     {%- endif -%}
     {%- include blocks/hero.html hero=page.hero top_nav=true -%}
     <section id="main">
+      {% if site.banner.enabled and page.banner == true %}
+      {%- include misc/notification.html notification=site.banner -%}
+      {% endif %}
       {% if page.anchor_headings %}
       {% include api/anchor_headings.html html=content anchorClass="anchorClass"  %}
       {% else %}
