@@ -18,4 +18,5 @@
   {% if page.hero.image %}
   <link rel="preload" as="image" href="{{ page.hero.image | absolute_url }}">
   {% endif %}
+  {%- include twitter_card.html -%}
 </head>
