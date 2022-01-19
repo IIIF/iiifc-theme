@@ -5,6 +5,15 @@
   </title>
   <meta name="description" content="{{ site.tagline | default: site.organization.tagline }}">
   <link rel="shortcut icon" href="{%- if site.logo -%}{{ site.logo | absolute_url }}{%- else -%}{{ site.organization.logo | absolute_url }}{%- endif -%}">
+ <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+ <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+ <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+ <link rel="manifest" href="assets/site.webmanifest">
+ <link rel="mask-icon" href="assets/safari-pinned-tab.svg" color="#E82334">
+ <meta name="msapplication-TileColor" content="#da532c">
+ <meta name="theme-color" content="#ffffff">
+
+
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,5 +27,6 @@
   {% if page.hero.image %}
   <link rel="preload" as="image" href="{{ page.hero.image | absolute_url }}">
   {% endif %}
-  {%- include twitter_card.html -%}
+
+    {% seo %}
 </head>
