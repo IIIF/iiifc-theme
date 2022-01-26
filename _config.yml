@@ -18,6 +18,7 @@ plugins:
   - jekyll-gzip
   - jekyll-redirect-from
   - jekyll-liquify
+  - jekyll-seo-tag
 
 # URLS
 root_url:       https://iiif.io
@@ -92,3 +93,21 @@ iiifc-theme:
           link:  '{{ site.root_url }}/community/consortium'
         - label: 'Contact Us'
           link:  '{{ site.root_url }}/contact'
+
+
+# Jekyll SEO plugin info
+#title: IIIF APIs and Community Site
+tagline: "IIIF is a set of open standards for delivering high-quality digital objects online at scale. It’s also the international community that makes it all work."
+#description: IIIF is an open standard for delivering high-quality, attributed digital objects online at scale. It’s also an international community developing and implementing the IIIF APIs, backed by a consortium of leading academic and cultural institutions.
+#url: https://iiif.io/
+twitter:
+  username: iiif_io
+  card: summary
+logo: /assets/favicon.ico
+social:
+  name: IIIF
+  links:
+    - https://twitter.com/IIIF_io
+    - https://www.linkedin.com/company/iiif-c/
+    - https://github.com/IIIF/
+
