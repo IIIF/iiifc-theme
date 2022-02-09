@@ -60,7 +60,4 @@ content-state:
   image: assets/images/icons/link-group@2x.png
   alt_text: Content State API icon
   latest:
-    label: Stable 1.0
-    major: 1
-    minor: 0
-    patch: 0
+    label: Draft 0.9
