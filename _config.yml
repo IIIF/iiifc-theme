@@ -44,6 +44,9 @@ iiifc-theme:
       link: '{{ site.root_url }}/demos'
     - label: 'News & Events'
       link: '{{ site.root_url }}/news-and-events'
+      sub:
+        - label: 'Cambridge 2022'
+          link: '{{ site.root_url }}/event/2022/cambridge'
     - label: 'Get Involved'
       link: '{{ site.root_url }}/get-involved'
       sub:
