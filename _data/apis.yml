@@ -55,7 +55,7 @@ discovery:
     patch: 0
 content-state:
   label: Content State API
-  description: Generate a very specific link to a particular view of an object, like a specific area on a particulat page rotated at a certain angle.
+  description: Generate a very specific link to a particular view of an object, like a specific area on a particular page rotated at a certain angle.
   tech_description: The IIIF Content State API provides a way to refer to a IIIF Presentation API resource, or a part of a resource, in a compact format that can be used to initialize the view of that resource in any client.
   image: assets/images/icons/link-group@2x.png
   alt_text: Content State API icon
