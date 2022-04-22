@@ -121,7 +121,8 @@
   start_date: 2013-05-15
   end_date: 2013-05-17
   location: Paris, France
-  description: Hosted by Biblissima and the Bibliothèque nationale de France. See the [meeting website](https://projet.biblissima.fr/en/news/biblissima-and-stanford-university-viewer-interoperability-meetings-0) for schedule information.  
+  description: Hosted by Biblissima and the Bibliothèque nationale de France. 
+  url: https://projet.biblissima.fr/en/news/biblissima-and-stanford-university-viewer-interoperability-meetings-0
 - name: Summer 2012 Edinburgh, Scotland
   start_date: 2012-07-14
   end_date: 2012-07-16
