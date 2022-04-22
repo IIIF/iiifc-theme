@@ -117,10 +117,11 @@
   end_date: 2014-02-21
   location: Copenhagen, Denmark
   description: Hosted by the Royal Danish Library
-- name: Summer 2013 Paris, France
+- name: 2013 Paris, France
   start_date: 2013-05-15
-  end_date: 2013-05-27
+  end_date: 2013-05-17
   location: Paris, France
+  description: Hosted by Biblissima and the Bibliothèque nationale de France. See the [meeting website](https://projet.biblissima.fr/en/news/biblissima-and-stanford-university-viewer-interoperability-meetings-0) for schedule information.  
 - name: Summer 2012 Edinburgh, Scotland
   start_date: 2012-07-14
   end_date: 2012-07-16
