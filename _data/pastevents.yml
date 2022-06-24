@@ -1,3 +1,9 @@
+- name: 2022 IIIF Annual Conference
+  start_date: 2022-06-06
+  end_date: 2022-06-08
+  location: Cambridge, MA, USA
+  url: /event/2022/cambridge/
+  description: "This event is intended for a wide range of participants and interested parties, including digital image repository managers, content curators, software developers, scholars, and administrators at libraries, museums, cultural heritage institutions, software firms, and other organizations working with digital images and audio/visual materials."
 - name: 2021 IIIF Fall Working Meeting
   start_date: 2021-11-16
   end_date: 2021-11-18
