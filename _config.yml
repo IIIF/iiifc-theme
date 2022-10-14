@@ -44,6 +44,9 @@ iiifc-theme:
       link: '{{ site.root_url }}/demos'
     - label: 'News & Events'
       link: '{{ site.root_url }}/news-and-events'
+      sub:
+        - label: '2022 Online Meeting'
+          link: '{{ site.root_url }}/event/2022/online-meeting/'
     - label: 'Get Involved'
       link: '{{ site.root_url }}/get-involved'
       sub:
