@@ -38,8 +38,8 @@ search:
   image: assets/images/icons/search-group@2x.png
   alt_text: Search API icon
   latest:
-    label: Stable 1.0
-    major: 1
+    label: Stable 2.0
+    major: 2
     minor: 0
     patch: 0
 discovery:
