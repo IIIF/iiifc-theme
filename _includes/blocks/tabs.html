@@ -3,7 +3,7 @@
     <ul>
       {% for tab in include.tabs %}
       <li class="tab" id="{{ tab.label | slugify }}-heading" onclick="openTab('{{ tab.label | slugify }}')">
-        <h3><a>{{ tab.label }}</a></h3>
+        <h3><span>{{ tab.label }}</span></h3>
       </li>
       {% endfor %}
     </ul>
