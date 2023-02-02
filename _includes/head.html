@@ -24,7 +24,7 @@
     {%- include misc/google-analytics.html -%}
   {%- endif -%}
 
-  {% if page.hero.image %}
+  {% if page.hero.image and page.hero.image != "" %}
   <link rel="preload" as="image" href="{{ page.hero.image | absolute_url }}">
   {% endif %}
 
