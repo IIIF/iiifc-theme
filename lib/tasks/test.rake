@@ -5,7 +5,7 @@ namespace :test do
   task :html do
     opts = {
       check_html: true,
-      checks: []
+      checks: ['Images']
     }
     HTMLProofer.check_directory(SITE_DIR, opts).run
   end
