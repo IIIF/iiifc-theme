@@ -1,19 +1,14 @@
 require 'iiifc'
 
 namespace :test do
-  # desc 'Check html'
-  # task :html do
-  #   opts = {
-  #     check_html: true,
-  #     assume_extension: true,
-  #     validation: {
-  #       report_mismatched_tags: true,
-  #       report_invalid_tags: true
-  #     },
-  #     checks_to_ignore: ['LinkCheck']
-  #   }
-  #   HTMLProofer.check_directory(SITE_DIR, opts).run
-  # end
+  desc 'Check html'
+  task :html do
+    opts = {
+      check_html: true,
+      checks: []
+    }
+    HTMLProofer.check_directory(SITE_DIR, opts).run
+  end
 
   namespace :links do
     desc 'Check for internal link errors'
@@ -23,7 +18,7 @@ namespace :test do
         checks: ['Links'],
         disable_external: true,
         enforce_https: false,
-        swap_urls: { %r{^http\://localhost\:4000} => 'https://iiif.io' },
+        internal_domains: ['localhost:4000'],
       }
       HTMLProofer.check_directory(SITE_DIR, opts).run
     end
