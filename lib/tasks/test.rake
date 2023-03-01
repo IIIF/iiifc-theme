@@ -16,7 +16,7 @@ namespace :test do
       opts = {
         checks: ['Links'],
         disable_external: true,
-        enforce_https: true,
+        enforce_https: false,
         internal_domains: ['localhost:4000'],
       }
       HTMLProofer.check_directory(SITE_DIR, opts).run
@@ -27,10 +27,21 @@ namespace :test do
     task :external do
       puts 'Checking for external link errors'
       opts = {
-        enforce_https: true,
+        enforce_https: false,
         ignore_status_codes: [429],
         only_4xx: true,
-        #swap_urls: { %r{^http\://localhost\:4000} => 'https://iiif.io' },
+        checks: ['Links','Images'],
+        url_ignore: [/.*iiif\.io.*/],
+        ignore_files: [/.*news\/.*/]
+      }
+      HTMLProofer.check_directory(SITE_DIR, opts).run
+    end
+
+    desc 'Check for https link errors'
+    task :https do
+      puts 'Checking for https link errors'
+      opts = {
+        enforce_https: true,
         checks: ['Links','Images'],
         url_ignore: [/.*iiif\.io.*/],
         ignore_files: [/.*news\/.*/]
