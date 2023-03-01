@@ -41,7 +41,7 @@ namespace :test do
         ignore_status_codes: [429],
         only_4xx: true,
         swap_urls: { %r{^http\://localhost\:4000} => 'https://iiif.io' },
-        checks: ['Links','Images'],
+        checks: ['Links','Images','Scripts'],
         ignore_urls: [/.*iiif\.io.*/], 
         ignore_files: [/.*news\/.*/]
       }
