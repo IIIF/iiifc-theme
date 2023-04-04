@@ -1,0 +1,28 @@
+<section class="{{include.class}} wrapper">
+            <h2>{{include.head_text}}</h2>
+            
+              <!-- not ideal, but we can't seem to pass data ids through -->
+              {% if include.class == 'image-viewers' %}
+                <p>Below is a list of IIIF viewers that can be used to show IIIF Manifests and Images. A more detailed guide on how to view IIIF content in viewers is aviliable in the <a href="{{ site.url }}{{ site.baseurl }}/explainers/using_iiif_resources/">How To Use IIIF Resources and Image Viewers</a> page.</p>
+                <ul>
+                {% assign data = site.data.image_clients %}
+              {% elsif include.class == 'image-servers' %}
+                <ul>
+                {% assign data = site.data.image_servers %}
+              {% elsif include.class == 'impl-demos' %}
+                
+                <p>For a more complete and up-to-date list of implementations, please see the <a href="https://github.com/IIIF/awesome-iiif/blob/master/implementations.md">IIIF Awesome Implementations list</a>.</p>
+                <ul>
+                {% assign data = site.data.impl_demos %}
+              {% endif %}
+
+              {% for entry in data %}
+              <li>
+                <p class="font-weight-600"><a href="{{ entry.uri }}" target="_blank">{{ entry.name }}</a></p>
+                {% for p in entry.blurb %}
+                {{ p | markdownify }}
+                {% endfor %}
+              </li>
+              {% endfor %}
+            </ul>
+          </section>

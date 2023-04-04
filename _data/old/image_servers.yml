@@ -1,0 +1,110 @@
+# Use Markdown in the blurb if necessary for links, etc. Each list entry in the blurb gets a <p>.
+- name: Cantaloupe
+  uri: https://cantaloupe-project.github.io/
+  blurb:
+  - >
+    High-performance dynamic image server in Java
+  - >
+    Cantaloupe is an open-source image server enabling on-demand generation of derivatives of high-resolution source images.
+    With available operations including cropping, scaling, and rotation, it can support deep-zooming image viewers,
+    as well as on-the-fly thumbnail generation. Project goals include performance, scalability, and extensibility, without sacrificing ease-of-use.
+  - >
+    Cantaloupe supports the IIIF Image API version 1 & 2.
+- name: IIPImage Server
+  uri: https://iipimage.sourceforge.io/documentation/server/
+  blurb:
+  - >
+    The IIPImage server is a high performance image server for streaming high
+    resolution images. It supports advanced image features such as 16 and 32
+    bit color depths, floating point data, CIELAB colorimetric images and
+    scientific imagery such as multispectral or hyperspectral images.
+  - >
+    The server  is an Fast CGI module written in C++ that is designed to be
+    embedded within a host web server such as Apache, Lighttpd, MyServer or Nginx.
+  - >
+    IIPImage server is IIIF compatible (
+    [GitHub repo](https://github.com/ruven/iipsrv) of the project).
+- name: Loris
+  uri: https://github.com/loris-imageserver/loris
+  blurb:
+  - >
+    Loris is an open source, Python-based image server that supports the IIIF
+    Image API ver 2.0. Loris supports JPEG and TIFF sources as well as JPEG2000.
+- name: Rodent-Assimilated Image Server (RAIS)
+  uri: https://github.com/uoregon-libraries/rais-image-server
+  blurb:
+  - >
+    RAIS is a high-performance IIIF Image server written in Go aimed primarily
+    at handling JP2 images.  It has direct integration with openjpeg, making
+    its JP2 decoding extremely fast. It has an optional plugin which can be
+    used to add ImageMagick bindings for fast decoding of non-JP2 sources. It
+    can optionally cache tiles to memory using an intelligent 2Q LRU cache.
+  - >
+    Plugins are supported to allow operations like pulling from S3 on demand and 
+    adding arbitrary middleware.
+  - >
+    RAIS supports level 2 of the IIIF Image API 2.1 as well as some optional features like max image size.
+    (Project [GitHub repo](https://github.com/uoregon-libraries/rais-image-server)  -  [Wiki](https://github.com/uoregon-libraries/rais-image-server/wiki)).
+- name: ContentDM
+  uri: http://www.contentdm.org/
+  blurb:
+  - >
+    ContentDM is a full-featured digital collection management system
+    supported by OCLC that includes image hosting and metadata management.
+    CONTENTdm allows for easy building and showcasing of digital collections
+    on personalized websites, making them more discoverable to people around the world.
+    CONTENTdm also secures and monitors master files in a cloud-based preservation
+    archive so they remain safe for the future.
+  - >
+    Digital repositories using CONTENTdm support the IIIF Image API. For more details see the [CONTENTdm IIIF Support page](https://oc.lc/IIIFandCONTENTdm).
+- name: Djatoka
+  uri: https://sourceforge.net/projects/djatoka/
+  blurb:
+  - >
+    Djatoka is an open source, Java-based image server that provides
+    compression and region extraction of JPEG 2000 images, URI-addressability
+    of regions, and support for multiple image formats (including., BMP, GIF,
+    JPG, PNG, PNM, TIF, JPEG 2000). Djatoka comes with a plug-in framework that
+    allows transformations to be applied to regions and resolutions (e.g.,
+    watermarking).
+  - >
+    Djatoka is not natively IIIF-compatible. However, djatoka URI’s are easily
+    translated to IIIF URI’s (for example see this
+    [Ruby on Rails gem](https://github.com/jronallo/djatoka) that does the
+    translation).
+- name: FSI Server
+  uri: https://www.neptunelabs.com/fsi-server/
+  blurb:
+  - >
+    There is a [IIIF adaptor for FSI server](https://github.com/jhu-digital-manuscripts/rosa/tree/master/rosa-iiif-endpoint).
+  - >
+    FSI Server is a popular commercial solution for serving high resolution
+    images in multiple formats.&nbsp; It accompanies the Flash-based FSI Viewer
+    for zoom and pan.
+- name: digilib
+  uri: https://robcast.github.io/digilib/
+  blurb:
+  - >
+    digilib is an open source, Java based image server for high resolution images.
+    It supports the IIIF Image API and a native API that also allows brightness,
+    contrast and color corrections and other operations.
+  - >
+    digilib supports JPEG, TIFF, PNG, JPEG2000 and other image formats via Java
+    ImageIO. digilib also has a web client that offers continuous zoom,
+    referenceable views, image annotations and other features for scholarly work.
+
+- name: Riiif
+  uri: https://github.com/curationexperts/riiif
+  blurb:
+  - >
+    A Ruby IIIF image server as a rails engine. Note that RIIIF is meant for development convenience and will not scale to the needs of most production-level applications.
+- name: Hymir IIIF Server
+  uri: https://github.com/dbmdz/iiif-server-hymir
+  blurb:
+  - >
+    Hymir is a Java based IIIF Server. It is based on "IIIF Image API Java Libraries" and "IIIF Presentation API Java Libraries" projects (see [https://github.com/dbmdz](https://github.com/dbmdz))
+- name: go-iiif
+  uri: https://github.com/go-iiif/go-iiif
+  blurb:
+  - >
+    This is a fork of @greut's iiif package that moves all of the processing logic for the IIIF Image API in to discrete Go packages and defines source, derivative and graphics details in a JSON config file. There is an additional caching layer for both source images and derivatives. [https://go-iiif.github.io/go-iiif/](https://go-iiif.github.io/go-iiif/)

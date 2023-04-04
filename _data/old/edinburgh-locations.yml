@@ -1,0 +1,31 @@
+- name: Edinburgh Centre for Carbon Innovation
+  url: https://edinburghcentre.org/
+  note: Location for the working meeting
+  address: Edinburgh Centre for Carbon Innovation, High School Yards, Edinburgh EH1 1LZ
+  lat: 55.94870419999999
+  lng: -3.183935399
+  dates: Tuesday 4th to Thursday 6th December
+- name: Royal Society of Edinburgh, Wolfson Lecture Theatre
+  note: Morning location of Showcase
+  address:  22-26 George St, Edinburgh EH2 2PQ, UK
+  lat: 55.95348130000001
+  lng: -3.1965827999999874
+  dates: Monday, 3rd of December
+- name: National Library of Scotland, Boardroom
+  note: location of the Archives session for the afternoon showcase
+  address: George IV Bridge, Edinburgh EH1 1EW
+  lat: 55.9485782
+  lng: -3.19197220000
+  dates: Monday, 3rd of December
+- name: Main Library, Edinburgh University
+  note: Location of the Digital Humanaties, Museums, Hands on and indepth Workshop afternoon sessions
+  address: 30 George Square, Edinburgh EH8 9LJ
+  lat: 55.9426994
+  lng: -3.18897479
+  dates: Monday, 3rd of December
+- name: St Cecilia's Hall
+  note: Location of the Showcase reception
+  address: St. Cecilia's Hall, The University of Edinburgh 50 Niddry St, Edinburgh EH1 1LG
+  lat: 55.9490224
+  lng: -3.1864841000
+  dates: Monday, 3rd of December

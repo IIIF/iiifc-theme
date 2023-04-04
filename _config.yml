@@ -5,7 +5,7 @@ baseurl:        ''
 permalink:      pretty
 theme:          udt-itf-theme
 source:         source
-google_analytics:   UA-7219229-22
+# google_analytics:   UA-7219229-22
 
 markdown:       kramdown
 exclude:        [node_modules]
@@ -21,96 +21,105 @@ plugins:
   - jekyll-seo-tag
 
 # URLS
-root_url:       https://iiif.io
-api_url:        https://iiif.io/api
-cookbook_url:   https://iiif.io/api/cookbook
-guides_url:     https://iiif.io/guides
-training_url:   https://training.iiif.io
+# root_url:       https://iiif.io
+# api_url:        https://iiif.io/api
+# cookbook_url:   https://iiif.io/api/cookbook
+# guides_url:     https://iiif.io/guides
+# training_url:   https://training.iiif.io
 
 # THEME VARS
 udt-itf-theme:
   logo:       assets/images/logos/logo-sm.png
   acronym:    UDT-ITF
-  title:      International Image Interoperability Framework
-  tagline:    "IIIF is a set of open standards for delivering high-quality, attributed digital objects online at scale. It’s also an international community developing and implementing the IIIF APIs. IIIF is backed by a consortium of leading cultural institutions."
-  email:      iiif-discuss@googlegroups.com
+  title:      Unlocking Digital Text Interoperable Text Framework
+  tagline:    "Here add punchline about UDT-ITF, what it is and what it does"
+  email:      
   block-start: "<div class='container-block is-max-widescreen'><div class='container' markdown='1'>"
   block-center-start: '<div class="container-block is-max-widescreen"><div class="container has-text-centered" markdown="1">'
   block-end: '</div></div>'
   navbar_menu:
     - label: 'Home'
       link: '{{ site.root_url }}/'
-    - label: 'Demos'
-      link: '{{ site.root_url }}/demos'
+    # - label: 'Demos'
+    #   link: '{{ site.root_url }}/demos'
     - label: 'News & Events'
       link: '{{ site.root_url }}/news-and-events'
       sub:
-        - label: '2023 Annual Conference'
-          link: '{{ site.root_url }}/event/2023/naples/'
-    - label: 'Get Involved'
-      link: '{{ site.root_url }}/get-involved'
+        - label: 'UDT Workshops'
+          link: '{{ site.root_url }}/event/2023/udtworkshop3/'
+    # - label: 'Get Involved'
+    #   link: '{{ site.root_url }}/get-involved'
+    #   sub:
+    #     - label: 'Community'
+    #       link: '{{ site.root_url }}/community/'
+    #     - label: 'Consortium'
+    #       link: '{{ site.root_url }}/community/consortium'
+    #     - label: 'Join Newsletter'
+    #       link: '{{ site.root_url }}/newsletter'
+    #     - label: 'Code of Conduct'
+    #       link: '{{ site.root_url }}/event/conduct/'
+    - label: 'APIs'
+      link: '{{ site.root_url }}/api'
       sub:
-        - label: 'Community'
-          link: '{{ site.root_url }}/community/'
-        - label: 'Consortium'
-          link: '{{ site.root_url }}/community/consortium'
-        - label: 'Join Newsletter'
-          link: '{{ site.root_url }}/newsletter'
-        - label: 'Code of Conduct'
-          link: '{{ site.root_url }}/event/conduct/'
-    - label: 'Get Started'
-      link: '{{ site.root_url }}/get-started'
-      sub:
-        - label: 'How IIIF Works'
-          link: '{{ site.root_url }}/get-started/how-iiif-works'
-        - label: 'Guides'
-          link: '{{ site.guides_url }}'
-        - label: 'APIs & Documentation'
-          link: '{{ site.api_url }}'
-        - label: 'Cookbooks'
-          link: '{{ site.root_url }}/get-started/cookbook'
-        - label: 'Training'
-          link: '{{ site.root_url }}/get-started/training'
+        - label: 'Framgment API'
+          link: '{{ site.root_url }}/api/fragment'
+        - label: 'Presentation API'
+          link: '{{ site.root_url }}/api/presentation'
+        - label: 'Annotation API'
+          link: '{{ site.root_url }}/api/annotation'
+        - label: 'Whatever API'
+          link: '{{ site.root_url }}/api'
+    # - label: 'Get Started'
+    #   link: '{{ site.root_url }}/get-started'
+    #   sub:
+    #     - label: 'How IIIF Works'
+    #       link: '{{ site.root_url }}/get-started/how-iiif-works'
+    #     - label: 'Guides'
+    #       link: '{{ site.guides_url }}'
+    #     - label: 'APIs & Documentation'
+    #       link: '{{ site.api_url }}'
+    #     - label: 'Cookbooks'
+    #       link: '{{ site.root_url }}/get-started/cookbook'
+    #     - label: 'Training'
+    #       link: '{{ site.root_url }}/get-started/training'
   footer_menu:
     - heading: About
       sub:
-        - label: 'How IIIF Works'
-          link:  '{{ site.root_url }}/get-started/how-iiif-works'
-        - label: 'APIs & Documentation'
-          link:  '{{ site.api_url }}'
-        - label: 'Demos'
-          link:  '{{ site.root_url }}/demos'
-        - label: 'Tutorials & Guides'
-          link:  '{{ site.guides_url }}'
-        - label: 'Privacy policy'
-          link:  '{{ site.root_url }}/privacy'
-    - heading: Stay Connected
+        - label: 'What is UDT-ITF'
+          link:  '{{ site.root_url }}'
+        - label: 'APIs Documentation'
+          link:  '{{ site.root_url }}/api'
+        # - label: 'Demos'
+        #   link:  '{{ site.root_url }}/demos'
+        # - label: 'Tutorials & Guides'
+        #   link:  '{{ site.guides_url }}'
+        # - label: 'Privacy policy'
+        #   link:  '{{ site.root_url }}/privacy'
+    - heading: Stay Tuned
       sub:
         - label: 'News & Events'
           link:  '{{ site.root_url }}/news-and-events'
-        - label: 'Join Newsletter'
-          link:  '{{ site.root_url }}/newsletter'
-        - label: 'Community Groups'
-          link:  '{{ site.root_url }}/community/groups'
-        - label: 'Consortium'
-          link:  '{{ site.root_url }}/community/consortium'
+        # - label: 'Join Newsletter '
+        #   link:  '{{ site.root_url }}/newsletter'
+        # - label: 'Community Groups'
+        #   link:  '{{ site.root_url }}/community/groups'
+        # - label: 'Consortium'
+        #   link:  '{{ site.root_url }}/community/consortium'
         - label: 'Contact Us'
           link:  '{{ site.root_url }}/contact'
 
 
 # Jekyll SEO plugin info
 #title: IIIF APIs and Community Site
-tagline: "IIIF is a set of open standards for delivering high-quality digital objects online at scale. It’s also the international community that makes it all work."
+tagline: "Add punchline about UDT-ITF"
 #description: IIIF is an open standard for delivering high-quality, attributed digital objects online at scale. It’s also an international community developing and implementing the IIIF APIs, backed by a consortium of leading academic and cultural institutions.
 #url: https://iiif.io/
-twitter:
-  username: iiif_io
-  card: summary
+# twitter:
+#   username: iiif_io
+#   card: summary
 logo: /assets/favicon.ico
 social:
-  name: IIIF
+  name: UDT-ITF
   links:
-    - https://twitter.com/IIIF_io
-    - https://www.linkedin.com/company/iiif-c/
-    - https://github.com/IIIF/
+    - https://www.cdh.cam.ac.uk/research/projects/unlocking-digital-texts/
 
