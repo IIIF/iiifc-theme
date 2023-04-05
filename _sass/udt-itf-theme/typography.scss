@@ -1,6 +1,6 @@
 @mixin heading {
   font-family: $family-serif;
-  color: $dark-blue;
+  color: $dark-teal;
   font-weight: bolder;
 }
 
@@ -29,7 +29,7 @@ h3 {
 }
 
 .blue-text {
-  color: #006eb0 !important;
+  color: $dark-teal !important;
 }
 
 .sans-serif {

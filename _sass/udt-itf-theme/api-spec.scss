@@ -1,5 +1,5 @@
 .api-sidebar-container {
-  background-color: $light-blue;
+  background-color: $grey;
   padding-left: 3.5rem;
   padding-right: 0;
   margin-bottom: 0.75rem;
@@ -7,7 +7,7 @@
     padding: 3rem 3.5rem 2.5rem 0;
   }
   a {
-  color: $dark-blue;
+  color: $dark-teal;
   }
 }
 
@@ -28,10 +28,10 @@
     font-size: 1.15rem;
   }
   a:hover {
-    color: $blue;
+    color: $citron;
   }
   a:active {
-    border-left: $blue;
+    border-left: $citron;
   }
   .toc-submenu-2{
     font-weight: normal;
@@ -90,8 +90,8 @@
       background-color: $white;
     }
     thead {
-      background-color: $light-bluer;
-      color: $dark-blue;
+      background-color: $grey;
+      color: $dark-teal;
       font-size: 1rem;
       font-family: $family-serif;
       th {
@@ -121,7 +121,7 @@
   }
 
   .alert, .note {
-    border-left: 4px solid #E0CB52;
+    border-left: 4px solid $citron;
     background: #FCFAEE;
     padding-top: 5px;
     padding-bottom: 20px;

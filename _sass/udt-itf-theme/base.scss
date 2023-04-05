@@ -103,7 +103,7 @@ html, body {
     padding: 2.75rem;
   }
   .container-block:nth-child(even):not(:only-child) {
-    background-color: $light-blue;
+    background-color: $grey;
   }
   .hover-box {
     transition: transform .3s;
@@ -116,19 +116,19 @@ html, body {
 
 #footer {
   background-color: $grey;
-  color: $black;
+  color: $dark-teal;
   .menu-column {
     font-family: $family-serif;
     font-size: $size-7;
     line-height: 24px;
     font-weight: bold;
     h4 {
-      color: $dark-blue !important;
+      color: black !important;
       margin-bottom: 1em;
       font-weight: bold;
     }
     a {
-      color: #006eb0;
+      color: #023436;
     }
   }
 }
@@ -210,7 +210,7 @@ p.inline-icon {
   .date-block-container {
     height: 100%;
     .date-block {
-      background-color: $purple;
+      background-color: #023436;
       height:100%;
       border-radius: unset;
       border-bottom-left-radius: 8px;
@@ -234,7 +234,7 @@ p.inline-icon {
 
 
 .iiif-notification {
-  background-color: $red;
+  background-color: #023436;
   margin-bottom: 0 !important;
   border-radius: 0;
 
@@ -244,7 +244,7 @@ p.inline-icon {
   }
 
   .message-header {
-    background-color: $red;
+    background-color: #023436;
     padding: 1.5rem 0;
     max-width: 780px;
     margin: 0 auto;

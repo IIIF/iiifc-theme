@@ -16,13 +16,13 @@ div.slider-arrow {
   height: 36px;
   margin-top: -36px;
   line-height: 36px;
-  color: $blue;
+  color: $dark-teal;
   font-size: 2rem;
   cursor: pointer;
   z-index: 10;
 }
 div.slider-arrow:hover {
-  color: $dark-blue;
+  color: $dark-teal;
 }
 div.slider-prev {
   left: 0;
@@ -38,7 +38,7 @@ div.slider-next {
   border: 1px solid transparent;
   border-top: none;
   border-bottom: 1px solid #DDD;
-  box-shadow: inset 0 1px 2px rgba(0,0,0,.39), 0 -1px 1px #FFF, 0 1px 0 #FFF;
+  // box-shadow: inset 0 1px 2px rgba(0,0,0,.39), 0 -1px 1px #FFF, 0 1px 0 #FFF;
 }
 .carousel-resource img {
   object-fit: contain;

@@ -13,14 +13,17 @@ $black: #171717;
 $greyish-brown: #4a4a4a;
 $shadow: rgba(60, 64, 67, 0.2);
 $caption-grey: #5f5f5f;
-
+$lavanderblush: #eee5e9;
+$dark-teal: #023436;
+$citron: #D3CE41;
 /* bulma overrides */
 
 $background: $white;
-$primary: $blue;
-$primary-dark: $navy;
+$primary: $dark-teal;
+$primary-dark: $dark-teal;
 $text: $black;
-$notification-background-color: $red;
+
+$notification-background-color: $black;
 
 $card-footer-border-top: none;
 
