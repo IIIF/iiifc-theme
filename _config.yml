@@ -31,7 +31,7 @@ plugins:
 udt-itf-theme:
   logo:       assets/images/logos/logo-sm.png
   acronym:    UDT-ITF
-  title:      Unlocking Digital Text <br> Interoperable Text Framework
+  title:      Unlocking Digital Texts <br> Interoperable Text Framework
   tagline:    "Here add punchline about UDT-ITF, what it is and what it does"
   email:      
   block-start: "<div class='container-block is-max-widescreen'><div class='container' markdown='1'>"
