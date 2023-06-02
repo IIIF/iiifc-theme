@@ -21,14 +21,14 @@ presentation:
     minor: 0
     patch: 0
 auth:
-  label: Authentication API
+  label: Authorization Flow API
   description: Control and restrict access by creating a link to a user interface for logging in and services that provide credentials.
-  tech_description: The IIIF Authentication specification describes a set of workflows for guiding the user through an existing access control system.
+  tech_description: The IIIF Authoritzaion Flow specification describes a set of workflows for guiding the user through an existing access control system.
   image: assets/images/icons/auth-group@2x.png
-  alt_text: Authentication API icon
+  alt_text: Auth Flow API icon
   latest:
-    label: Stable 1.0
-    major: 1
+    label: Stable 2.0
+    major: 2
     minor: 0
     patch: 0
 search:
