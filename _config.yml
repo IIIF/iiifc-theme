@@ -44,9 +44,9 @@ iiifc-theme:
       link: '{{ site.root_url }}/demos'
     - label: 'News & Events'
       link: '{{ site.root_url }}/news-and-events'
-      sub:
-        - label: '2023 Annual Conference'
-          link: '{{ site.root_url }}/event/2023/naples/'
+      # sub:
+      #   - label: '2023 Annual Conference'
+      #     link: '{{ site.root_url }}/event/2023/naples/'
     - label: 'Get Involved'
       link: '{{ site.root_url }}/get-involved'
       sub:
