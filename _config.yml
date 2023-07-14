@@ -56,7 +56,7 @@ iiifc-theme:
           link: '{{ site.root_url }}/community/consortium'
         - label: 'Join Newsletter'
           link: '{{ site.root_url }}/newsletter'
-        - label: 'Outreach materials'
+        - label: 'Outreach Materials'
           link: '{{ site.root_url }}/get-involved/outreach-materials'
     - label: 'Get Started'
       link: '{{ site.root_url }}/get-started'
