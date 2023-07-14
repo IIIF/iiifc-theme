@@ -56,8 +56,8 @@ iiifc-theme:
           link: '{{ site.root_url }}/community/consortium'
         - label: 'Join Newsletter'
           link: '{{ site.root_url }}/newsletter'
-        - label: 'Code of Conduct'
-          link: '{{ site.root_url }}/event/conduct/'
+        - label: 'Outreach materials'
+          link: '{{ site.root_url }}/get-involved/outreach-materials'
     - label: 'Get Started'
       link: '{{ site.root_url }}/get-started'
       sub:
