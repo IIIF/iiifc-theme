@@ -44,9 +44,9 @@ udt-itf-theme:
     #   link: '{{ site.root_url }}/demos'
     - label: 'News & Events'
       link: '{{ site.root_url }}/news-and-events'
-      sub:
-        - label: 'UDT Workshops'
-          link: '{{ site.root_url }}/event/2023/udtworkshop3/'
+      # sub:
+      #   - label: 'UDT Workshops'
+      #     link: '{{ site.root_url }}/event/2023/udtworkshop3/'
     # - label: 'Get Involved'
     #   link: '{{ site.root_url }}/get-involved'
     #   sub:
