@@ -32,8 +32,8 @@ udt-itf-theme:
   navbar_menu:
     - label: 'Home'
       link: '{{ site.root_url }}/'
-    - label: "Project"
-      link: '{{ site.root_url }}/project'
+#    - label: "Project"
+#      link: '{{ site.root_url }}/project'
     - label: 'News & Events'
       link: '{{ site.root_url }}/news-and-events'
     - label: 'API'
