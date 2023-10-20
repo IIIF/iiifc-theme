@@ -23,8 +23,8 @@ plugins:
 udt-itf-theme:
   logo:       assets/images/logos/logo-sm.png
   acronym:    UDT-ITF
-  title:      Unlocking Digital Texts <br> Interoperable Text Framework
-  tagline:    "Here add punchline about UDT-ITF, what it is and what it does"
+  title:      Unlocking Digital Texts
+  tagline:    "Towards an Interoperable Text Framework"
   email:      
   block-start: "<div class='container-block is-max-widescreen'><div class='container' markdown='1'>"
   block-center-start: '<div class="container-block is-max-widescreen"><div class="container has-text-centered" markdown="1">'
@@ -32,6 +32,8 @@ udt-itf-theme:
   navbar_menu:
     - label: 'Home'
       link: '{{ site.root_url }}/'
+    - label: "Project"
+      link: '{{ site.root_url }}/project'
     - label: 'News & Events'
       link: '{{ site.root_url }}/news-and-events'
     - label: 'API'
@@ -52,7 +54,7 @@ udt-itf-theme:
 
 
 # Jekyll SEO plugin info
-tagline: "Add punchline about UDT-ITF"
+tagline: "Unlocking Digital Texts - Towards an Interoperable Text Framework"
 logo: /assets/favicon.ico
 social:
   name: UDT-ITF
