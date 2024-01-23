@@ -3,8 +3,8 @@
   end: 2023-12-07
   location: Online
   url: /event/2023/online-meeting/
-  description: IIIF working and learning online meeting. A collection of lightning talks and online workshops.
-- label: "2023 IIIF Annual Conference and Showcase"
+  description: "IIIF working and learning online meeting. A collection of lightning talks and online workshops."
+- name: 2023 IIIF Annual Conference and Showcase
   start: 2023-06-05
   end: 2023-06-08
   location: Naples, Italy
