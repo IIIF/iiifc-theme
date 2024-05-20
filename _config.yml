@@ -63,6 +63,8 @@ iiifc-theme:
       sub:
         - label: 'How IIIF Works'
           link: '{{ site.root_url }}/get-started/how-iiif-works'
+        - label: 'IIIF Ambassadors'
+          link: '{{ site.root_url }}/community/ambassadors/'
         - label: 'Guides'
           link: '{{ site.guides_url }}'
         - label: 'APIs & Documentation'
