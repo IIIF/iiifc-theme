@@ -1,3 +1,9 @@
+- name: 2024 IIIF Annual Conference and Showcase
+  start_date: 2024-06-04
+  end_date: 2024-06-07
+  location: Los Angeles, CA, USA
+  url: /event/2024/los-angeles/
+  description: "IIIF working and learning online meeting. A collection of lightning talks and online workshops."
 - name: IIIF Online Meeting 2023
   start_date: 2023-12-05
   end_date: 2023-12-07
