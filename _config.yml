@@ -42,8 +42,10 @@ iiifc-theme:
       link: '{{ site.root_url }}/'
     - label: 'Demos'
       link: '{{ site.root_url }}/demos'
-    - label: 'News & Events'
-      link: '{{ site.root_url }}/news-and-events'
+    - label: 'Events'
+      link: '{{ site.root_url }}/events'
+    - label: 'News'
+      link: '{{ site.root_url }}/news'
       # sub:
       #   - label: '2023 Annual Conference'
       #     link: '{{ site.root_url }}/event/2023/naples/'
