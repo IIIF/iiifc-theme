@@ -1,7 +1,12 @@
 ---
-layout: page
+layout: default
 breadcrumbs:
   - label: News & Events
     link: '{{ site.root_url }}/news-and-events/'
 ---
-{{ content }}
+{{ theme.block-start }}
+    {% include content/author-image.html author=page.author date=page.date float="true" %}
+  <div class="content">
+    {{ content }}
+  </div>
+{{ theme.block-end }}

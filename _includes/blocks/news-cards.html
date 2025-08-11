@@ -3,6 +3,8 @@
   {% for news in items | limit: include.limit %}
   <div class="column is-full">
     <div class="news-card card box hover-box columns is-gapless is-mobile">
+      {% include content/author-image.html author=news.author date=news.date %}
+      
       <div class="news-info card-content">
         <h3 class="news-title has-text-left"><a href="{{ news.url | absolute_url }}">{{ news.title }}</a></h3>
         <p class="news-details has-text-left sans-serif" style="margin-bottom:0">

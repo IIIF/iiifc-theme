@@ -1,0 +1,24 @@
+{% if include.float == "true" %}
+    {% assign class="news-author"%}
+{% else %}
+    {% assign class="author" %}    
+{% endif %}
+<div class="{{class}}">
+    {% assign caitlin_cutoff = '2022-11-07' | date: '%s' %}
+    {% assign post_date = include.date | date: '%s' %}
+    {% assign img-url = "none" %}
+    {% if include.author == "Martin Kalfatovic" %}
+        {% assign img-url = "assets/images/people/martin.webp" %}
+    {% elsif include.author == "Glen Robson" %}
+        {% assign img-url = "assets/images/people/glen.webp" %}
+    {% elsif post_date > caitlin_cutoff and (include.author == "IIIF-C Staff" or include.author == "IIIF Consortium Staff")%}
+        {% assign img-url = "assets/images/people/caitlin.webp" %}
+    {% endif %}
+    {% if img-url != "none" %}
+        <img class="img-author" src="{{ img-url | absolute_url}}" />
+        {% if include.float == "true" %}
+        <h4>Martin Kalfatovic</h4>
+        <h4>IIIF Managing Director</h4>
+        {% endif %}
+    {% endif %}
+</div>
