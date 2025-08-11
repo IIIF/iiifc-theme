@@ -15,7 +15,7 @@
         {% assign img-url = "assets/images/people/caitlin.webp" %}
     {% endif %}
     {% if img-url != "none" %}
-        <img class="img-author" src="{{ img-url | absolute_url}}" />
+        <img alt="Picture of {{include.author}}" class="img-author" src="{{ img-url | absolute_url}}" />
         {% if include.float == "true" %}
         <h4>Martin Kalfatovic</h4>
         <h4>IIIF Managing Director</h4>
