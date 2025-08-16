@@ -302,6 +302,19 @@ hr {
   margin: 30px;
 }
 
+.news-img-left {
+  float: left;
+  width: 300px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  margin: 30px;
+}
+
+.news-img-centre {
+  width: 80%;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  margin: 30px;
+}
+
 .news-title {
   margin-bottom: unset;
 }
@@ -311,11 +324,18 @@ hr {
   margin: auto;
   width: 78%;
 }
+
 .news-author {
   float: left;
   margin-right: 15px;
-  margin-left: -50px;
+  margin-left: -51px;
 }
+
+@media only screen and (max-width: 1000px) {
+     .news-author { 
+      display: none;
+     }
+  }
 
 .news-author h4 {
   text-align: center;
