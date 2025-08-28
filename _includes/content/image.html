@@ -1,0 +1,10 @@
+{% if include.align %}
+    {% if include.align == "left" %}
+        {% assign class = "news-img-left" %}
+    {% else %}
+        {% assign class = "news-img-right" %}
+    {% endif %}
+{% else %} 
+    {% assign class = "news-img-centre" %}
+{% endif%}
+<img class="{{class}}" title="{{include.alt}}" src="{{  include.src | absolute_url}}" alt="{{ include.alt }}"/>

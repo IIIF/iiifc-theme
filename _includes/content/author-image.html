@@ -1,0 +1,39 @@
+{% if include.float == "true" %}
+    {% assign class="news-author"%}
+{% else %}
+    {% assign class="author" %}    
+{% endif %}
+<div class="{{class}}">
+    {% assign caitlin_cutoff = '2022-11-07' | date: '%s' %}
+    {% assign post_date = include.date | date: '%s' %}
+    {% assign img-url = "none" %}
+    {% if include.author == "Martin Kalfatovic" %}
+        {% assign img-url = "assets/images/people/martin.webp" %}
+
+        {% capture job %}
+            <h4>Managing Director</h4>
+        {% endcapture %}
+    {% elsif include.author == "Glen Robson" %}
+        {% assign img-url = "assets/images/people/glen.webp" %}
+
+        {% capture job %}
+            <h4>Technical Coordinator</h4>
+        {% endcapture %}
+    {% elsif post_date > caitlin_cutoff and (include.author == "Caitlin Perry" or include.author == "IIIF-C Staff" or include.author == "IIIF Consortium Staff")%}
+        {% assign img-url = "assets/images/people/caitlin.webp" %}
+
+        {% assign job = "Communications & Community Coordinator" %}
+        {% capture job %}
+            <h4>Communications</h4>
+            <h4>& Community</h4>
+            <h4>Coordinator</h4>
+        {% endcapture %}
+    {% endif %}
+    {% if img-url != "none" %}
+        <img alt="Picture of {{include.author}}" class="img-author" src="{{ img-url | absolute_url}}" />
+        {% if include.float == "true" %}
+            <h4>{{include.author}}</h4>
+            {{ job }}
+        {% endif %}
+    {% endif %}
+</div>
