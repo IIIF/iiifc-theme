@@ -1,2 +1,5 @@
-
+{% if include.type and include.type contains "secondary" %}
+<a class="button is-secondary is-normal" href="{{ include.button_link | liquify | absolute_url }}">{{ include.button_label }}</a>
+{% else %}
 <a class="button is-primary is-normal" href="{{ include.button_link | liquify | absolute_url }}">{{ include.button_label }}</a>
+{% endif %}
