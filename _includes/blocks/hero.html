@@ -52,9 +52,18 @@
       {% else %}
       <p class="subtitle is-size-5">{{ hero.subtitle | default: page.subtitle }}</p>
       {% endif %}
-
       {% if hero.button %}
         {% include misc/button.html button_label=hero.button.label button_link=hero.button.link %}
+      {% endif %}
+      {% if hero.buttons %}
+        {% for button in hero.buttons %}
+          {% if forloop.first %}
+            {% include misc/button.html button_link=button.link button_label=button.label %}
+          {% else %}
+            {% include misc/button.html button_link=button.link button_label=button.label type="secondary" %}
+          {% endif %}
+          <span>&nbsp;&nbsp;</span>
+        {% endfor %}
       {% endif %}
     </div>
   </div>
