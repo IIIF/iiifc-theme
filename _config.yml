@@ -60,6 +60,8 @@ iiifc-theme:
           link: '{{ site.root_url }}/newsletter'
         - label: 'Outreach Materials'
           link: '{{ site.root_url }}/get-involved/outreach-materials'
+        - label: 'Strategic Plan'
+          link: '{{ site.root_url }}/community/consortium/strategic_plan_26-28'
     - label: 'Get Started'
       link: '{{ site.root_url }}/get-started'
       sub:
