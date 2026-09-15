@@ -32,7 +32,8 @@ namespace :test do
       puts 'Checking for link errors in *iiif.io* sites'
       opts = {
         checks_to_ignore: ['ImageCheck', 'HtmlCheck', 'ScriptCheck'],
-        url_ignore: [/^((?!iiif\.io).)*$/, 'github','iiif.aviaryplatform.com','conference2026.iiif.io'] # temporarily ignore iiif.io github repo errors, ignore aviary which returns 403, ignore conference site as its down
+        # temporarily ignore iiif.io github repo errors, ignore aviary which returns 403, ignore conference site as its down
+        url_ignore: [/^((?!iiif\.io).)*$/, 'github','iiif.aviaryplatform.com','conference2026.iiif.io','iiif.io/event/2026/netherlands'] 
       }
       HTMLProofer.check_directory(SITE_DIR, opts).run
     end
